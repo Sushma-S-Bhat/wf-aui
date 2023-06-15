@@ -1,0 +1,14 @@
+.candidate-detail-page {
+  display: flex;
+  padding: 40px;
+  flex-direction: column;
+  grid-column-gap: 32px;
+  grid-row-gap: 32px;
+}
+
+@media screen and (max-width: 991px) {
+  .candidate-detail-page {
+    padding-right: 24px;
+    padding-left: 24px;
+  }
+}

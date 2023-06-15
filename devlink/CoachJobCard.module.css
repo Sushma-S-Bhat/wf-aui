@@ -1,0 +1,193 @@
+.coach-job-card {
+  display: flex;
+  padding: 16px;
+  align-items: flex-start;
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+
+  border: 1px solid var(--borderGrey-ea561a79);
+  border-radius: 8px;
+
+  background-color: var(--bgGrey100-ce47127d);
+
+  transition: all 200ms ease;
+
+  cursor: pointer;
+}
+
+.coach-job-card:hover {
+  border-color: var(--blue200-07311850);
+  background-color: var(--blue100-d2a1a159);
+}
+
+.coach-job-card.skeleton:hover {
+  border-color: var(--borderGrey-ea561a79);
+  background-color: var(--bgGrey100-ce47127d);
+}
+
+.coach-job-logo-wrap {
+  position: relative;
+
+  display: flex;
+  overflow: hidden;
+  width: 80px;
+  height: 80px;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 8px;
+
+  background-color: var(--skeletonGrey-4e9a134f);
+
+  object-fit: cover;
+}
+
+.coach-job-logo-wrap.hide {
+  display: none;
+}
+
+.hide {
+  display: none;
+}
+
+@media screen and (max-width: 479px) {
+  .hide {
+    display: none;
+  }
+}
+
+.coach-job-logo {
+  position: relative;
+  z-index: 2;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: var(--white-80449ce7);
+
+  object-fit: contain;
+}
+
+.job-avatar-letter {
+  position: absolute;
+  z-index: 1;
+  overflow: hidden;
+  font-size: 0px;
+  line-height: 1.2;
+}
+
+.coach-job-detail-wrap {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  grid-column-gap: 4px;
+  grid-row-gap: 4px;
+}
+
+.coach-job-detail-wrap.gap-8 {
+  grid-row-gap: 8px;
+}
+
+.coach-detail-row-stack {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  grid-column-gap: 32px;
+  grid-row-gap: 32px;
+}
+
+@media screen and (max-width: 767px) {
+  .coach-detail-row-stack {
+    flex-wrap: wrap;
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+  }
+}
+
+.coach-detail-row-stack.align-start {
+  justify-content: flex-start;
+}
+
+.coach-detail-row-stack.stretch {
+  align-items: stretch;
+}
+
+.coach-detail-row-stack.gap-24 {
+  justify-content: flex-start;
+  grid-column-gap: 24px;
+  grid-row-gap: 24px;
+}
+
+@media screen and (max-width: 767px) {
+  .coach-detail-row-stack.gap-24 {
+    grid-column-gap: 12px;
+    grid-row-gap: 6px;
+  }
+}
+
+.coach-detail-row-stack.gap-40 {
+  justify-content: flex-start;
+  grid-column-gap: 40px;
+}
+
+@media screen and (max-width: 767px) {
+  .coach-detail-row-stack.no-wrap {
+    flex-wrap: nowrap;
+  }
+}
+
+.text-lg-bold {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 600;
+  letter-spacing: -0.45px;
+}
+
+.text-lg-bold.align-lext {
+  align-self: flex-start;
+}
+
+.text-grey-600 {
+  color: hsla(208.57142857142856, 9.17%, 44.90%, 1.00);
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.job-type-chip {
+  padding: 3px 10px;
+
+  border-radius: 100px;
+
+  background-color: var(--green200-3c062f81);
+
+  color: var(--grey600-d5bebe21);
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.job-type-chip.skeleton {
+  background-color: var(--borderGrey-ea561a79);
+  color: var(--skeletonGrey-4e9a134f);
+}
+
+.text-md-default {
+  letter-spacing: -0.15px;
+}
+
+.color-grey-600 {
+  color: var(--grey600-d5bebe21);
+}
+
+.text-md-default.color-grey-700 {
+  color: var(--grey700-7fbe857b);
+}
+
+.text-color-grey {
+  color: var(--textLightGrey-914158a7);
+}
+
+.text-color-dark-grey {
+  color: var(--textDarkGrey-65de823a);
+}

@@ -1,0 +1,57 @@
+.coach-meeting-layout {
+  display: grid;
+  max-width: 1920px;
+  min-height: 90vh;
+  padding-right: 40px;
+  padding-left: 40px;
+  grid-auto-columns: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 16px;
+  grid-template-columns: 1fr 0.6fr;
+  grid-template-rows: auto;
+
+  background-image: linear-gradient(to right, var(--bgGrey100-ce47127d), var(--bgGrey100-ce47127d) 61.5%, transparent 61.6%, transparent);
+}
+
+@media screen and (max-width: 991px) {
+  .coach-meeting-layout {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .coach-meeting-layout {
+    grid-template-columns: 1fr;
+    background-image: none;
+  }
+}
+
+.metting-content-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+  .metting-content-left {
+    background-color: var(--bgGrey100-ce47127d);
+  }
+}
+
+.slot-coach-event-tab {
+  padding: 39px;
+}
+
+#w-node-_2dce358d-ee05-a15d-8214-2cbc6f0b8337-6f0b8335 {
+  grid-column-start: span 1;
+  grid-column-end: span 1;
+  grid-row-start: span 1;
+  grid-row-end: span 1;
+}
+#w-node-_2dce358d-ee05-a15d-8214-2cbc6f0b833c-6f0b8335 {
+  grid-column-start: span 1;
+  grid-column-end: span 1;
+  grid-row-start: span 1;
+  grid-row-end: span 1;
+}

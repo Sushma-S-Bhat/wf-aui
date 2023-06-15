@@ -1,0 +1,110 @@
+.events-detail-wrapper {
+  display: flex;
+  padding: 10px 12px;
+  justify-content: space-between;
+  align-items: center;
+
+  border: 1px solid var(--borderGrey-ea561a79);
+  border-radius: 8px;
+
+  background-color: var(--bgGrey100-ce47127d);
+
+  transition: all 200ms ease;
+
+  cursor: pointer;
+}
+
+.events-detail-wrapper:hover {
+  border-color: var(--blue200-07311850);
+  background-color: var(--blue100-d2a1a159);
+}
+
+.events-detail-wrapper.skeleton {
+  padding-top: 5px;
+  padding-bottom: 10px;
+  cursor: auto;
+}
+
+.events-detail-wrapper.skeleton:hover {
+  border-color: var(--borderGrey-ea561a79);
+  background-color: var(--bgGrey100-ce47127d);
+}
+
+.events-detail-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex: 0 0 auto;
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+}
+
+.coach-event-name {
+  padding-left: 6px;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 600;
+  letter-spacing: -0.15px;
+}
+
+.coach-event-name.color-red-500 {
+  color: hsla(354.93506493506493, 66.96%, 54.90%, 1.00);
+}
+
+.coach-event-name.color-black {
+  color: hsla(0, 0.00%, 0.00%, 1.00);
+}
+
+.coach-event-name.skeleton {
+  font-family: 'Flow Circular';
+  color: var(--skeletonGrey-4e9a134f);
+}
+
+.view-details-button {
+  margin-top: 4px;
+  padding: 6px;
+
+  border-radius: 100px;
+
+  font-size: 12px;
+  line-height: 1;
+
+  cursor: pointer;
+}
+
+.view-details-button:hover {
+  background-color: var(--bgGrey200-4f66792c);
+}
+
+.view-details-button.skeleton {
+  background-color: var(--skeletonGrey-4e9a134f);
+  color: var(--skeletonGrey-4e9a134f);
+}
+
+.view-details-button.skeleton:hover {
+  background-color: var(--skeletonGrey-4e9a134f);
+}
+
+.event-date-day-wrap {
+  min-width: 150px;
+}
+
+.text-md-default {
+  letter-spacing: -0.15px;
+}
+
+.color-grey-600 {
+  color: var(--grey600-d5bebe21);
+}
+
+.text-md-default.color-grey-700 {
+  color: var(--grey700-7fbe857b);
+}
+
+.text-color-grey {
+  color: var(--textLightGrey-914158a7);
+}
+
+.text-color-dark-grey {
+  color: var(--textDarkGrey-65de823a);
+}

@@ -1,0 +1,316 @@
+.candidates-listing-page {
+  display: flex;
+  max-width: 1920px;
+  padding: 40px;
+  flex-direction: column;
+  align-items: center;
+  grid-column-gap: 32px;
+  grid-row-gap: 32px;
+}
+
+@media screen and (max-width: 767px) {
+  .candidates-listing-page {
+    padding-right: 24px;
+    padding-left: 24px;
+  }
+}
+
+.text-xxl-bold {
+  font-size: 26px;
+  line-height: 32px;
+  font-weight: 600;
+  letter-spacing: 0.35px;
+}
+
+.coach-empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+
+.coach-empty-image {
+  max-width: 300px;
+}
+
+.text-lg-bold {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 600;
+  letter-spacing: -0.45px;
+}
+
+.text-lg-bold.align-lext {
+  align-self: flex-start;
+}
+
+.text-grey-600 {
+  color: hsla(208.57142857142856, 9.17%, 44.90%, 1.00);
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.slot-candidate-grid {
+  display: grid;
+  width: 100%;
+  grid-auto-columns: 1fr;
+  grid-column-gap: 32px;
+  grid-row-gap: 32px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+}
+
+@media screen and (max-width: 767px) {
+  .slot-candidate-grid {
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .slot-candidate-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .slot-candidate-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+.career-candidate-card {
+  display: flex;
+  padding: 20px 24px;
+  flex-direction: column;
+  align-items: stretch;
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+
+  border: 1px solid var(--blue200-07311850);
+  border-radius: 8px;
+
+  background-color: var(--bgGrey100-ce47127d);
+
+  transition: all 200ms ease;
+
+  cursor: pointer;
+}
+
+@media screen and (max-width: 767px) {
+  .career-candidate-card {
+    padding: 10px;
+  }
+}
+
+.career-candidate-card:hover {
+  background-color: var(--blue100-d2a1a159);
+}
+
+.career-candidate-card.skeleton:hover {
+  background-color: var(--bgGrey100-ce47127d);
+}
+
+.candidate-main-detail {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+}
+
+.candidate-profilepic {
+  width: 100px;
+  height: 100px;
+  flex: 0 0 auto;
+
+  border-radius: 50%;
+
+  background-color: var(--skeletonGrey-4e9a134f);
+
+  object-fit: cover;
+}
+
+@media screen and (max-width: 767px) {
+  .candidate-profilepic {
+    width: 65px;
+    height: 65px;
+  }
+}
+
+.profile-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  grid-column-gap: 4px;
+  grid-row-gap: 4px;
+}
+
+.profile-content.gap-18 {
+  grid-column-gap: 18px;
+  grid-row-gap: 18px;
+}
+
+.profile-content.center-align {
+  justify-content: center;
+}
+
+.profile-content.gap-32 {
+  grid-column-gap: 32px;
+  grid-row-gap: 32px;
+}
+
+.text-lg-skeleton {
+  font-family: 'Flow Circular';
+  color: var(--skeletonGrey-4e9a134f);
+  font-size: 24px;
+  line-height: 1;
+  font-weight: 600;
+}
+
+.text-md-skeleton {
+  font-family: 'Flow Circular';
+  color: var(--skeletonGrey-4e9a134f);
+  font-size: 22px;
+  line-height: 1;
+}
+
+.text-md-skeleton.text-color-dark-grey {
+  color: var(--textDarkGrey-65de823a);
+}
+
+.text-color-dark-grey {
+  color: var(--textDarkGrey-65de823a);
+}
+
+.candidate-progress-wrap {
+  padding: 10px;
+  border: 1px solid var(--green200-3c062f81);
+  border-radius: 8px;
+  background-color: var(--green100-8db28f70);
+}
+
+@media screen and (max-width: 767px) {
+  .candidate-progress-wrap {
+    display: none;
+  }
+}
+
+.progress-name-text {
+  margin-bottom: 6px;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.progress-name-text.skeleton {
+  font-family: 'Flow Circular';
+  color: var(--skeletonGrey-4e9a134f);
+}
+
+.candidate-progress-grid {
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+}
+
+.candidate-progress-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-xxxl-skeleton {
+  font-family: 'Flow Circular';
+  color: var(--skeletonGrey-4e9a134f);
+  font-size: 36px;
+  line-height: 44px;
+  letter-spacing: 0.4px;
+}
+
+.text-xxxl-skeleton.color-black {
+  color: hsla(0, 0.00%, 0.00%, 1.00);
+}
+
+#w-node-_67e00740-2a81-63f0-22aa-cc7ecbbaada9-7aa4c0c8 {
+  grid-column-start: span 1;
+  grid-column-end: span 1;
+  grid-row-start: span 1;
+  grid-row-end: span 1;
+}
+#w-node-_67e00740-2a81-63f0-22aa-cc7ecbbaadae-7aa4c0c8 {
+  grid-column-start: span 1;
+  grid-column-end: span 1;
+  grid-row-start: span 1;
+  grid-row-end: span 1;
+}
+#w-node-_67e00740-2a81-63f0-22aa-cc7ecbbaadb3-7aa4c0c8 {
+  grid-column-start: span 1;
+  grid-column-end: span 1;
+  grid-row-start: span 1;
+  grid-row-end: span 1;
+}
+#w-node-_640c7d5f-613a-eaa0-8be3-445affb1ccf5-7aa4c0c8 {
+  grid-column-start: span 1;
+  grid-column-end: span 1;
+  grid-row-start: span 1;
+  grid-row-end: span 1;
+}
+#w-node-_640c7d5f-613a-eaa0-8be3-445affb1ccfa-7aa4c0c8 {
+  grid-column-start: span 1;
+  grid-column-end: span 1;
+  grid-row-start: span 1;
+  grid-row-end: span 1;
+}
+#w-node-_640c7d5f-613a-eaa0-8be3-445affb1ccff-7aa4c0c8 {
+  grid-column-start: span 1;
+  grid-column-end: span 1;
+  grid-row-start: span 1;
+  grid-row-end: span 1;
+}
+#w-node-_716a831b-cc5e-3707-b5e2-2d062ed582d0-7aa4c0c8 {
+  grid-column-start: span 1;
+  grid-column-end: span 1;
+  grid-row-start: span 1;
+  grid-row-end: span 1;
+}
+#w-node-_716a831b-cc5e-3707-b5e2-2d062ed582d5-7aa4c0c8 {
+  grid-column-start: span 1;
+  grid-column-end: span 1;
+  grid-row-start: span 1;
+  grid-row-end: span 1;
+}
+#w-node-_716a831b-cc5e-3707-b5e2-2d062ed582da-7aa4c0c8 {
+  grid-column-start: span 1;
+  grid-column-end: span 1;
+  grid-row-start: span 1;
+  grid-row-end: span 1;
+}
+#w-node-b4ed5245-48a7-2280-9e41-5978302cf0af-7aa4c0c8 {
+  grid-column-start: span 1;
+  grid-column-end: span 1;
+  grid-row-start: span 1;
+  grid-row-end: span 1;
+}
+#w-node-b4ed5245-48a7-2280-9e41-5978302cf0b4-7aa4c0c8 {
+  grid-column-start: span 1;
+  grid-column-end: span 1;
+  grid-row-start: span 1;
+  grid-row-end: span 1;
+}
+#w-node-b4ed5245-48a7-2280-9e41-5978302cf0b9-7aa4c0c8 {
+  grid-column-start: span 1;
+  grid-column-end: span 1;
+  grid-row-start: span 1;
+  grid-row-end: span 1;
+}

@@ -1,0 +1,113 @@
+.candidate-request-stack {
+  display: grid;
+  padding: 12px 20px;
+  align-items: center;
+  grid-auto-columns: 1fr;
+  grid-column-gap: 32px;
+  grid-row-gap: 32px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+
+  border: 1px solid var(--borderGrey-ea561a79);
+  border-radius: 8px;
+
+  background-color: var(--bgGrey100-ce47127d);
+
+  transition: all 300ms ease;
+
+  cursor: pointer;
+}
+
+.candidate-request-stack:hover {
+  border-color: var(--blue300-2a96c522);
+  background-color: var(--blue100-d2a1a159);
+}
+
+.candidate-name-wrap {
+  display: flex;
+  align-items: center;
+  grid-column-gap: 6px;
+  grid-row-gap: 6px;
+}
+
+.candidate-name-wrap.skeleton {
+  grid-column-gap: 12px;
+  grid-row-gap: 12px;
+}
+
+.icon-embed {
+  display: flex;
+  width: 20px;
+  height: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-embed.skeleton {
+  border-radius: 6px;
+  background-color: var(--skeletonGrey-4e9a134f);
+}
+
+.text-lg-bold {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 600;
+  letter-spacing: -0.45px;
+}
+
+.text-lg-bold.align-lext {
+  align-self: flex-start;
+}
+
+.text-grey-600 {
+  color: hsla(208.57142857142856, 9.17%, 44.90%, 1.00);
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.request-day-grid {
+  display: grid;
+  align-items: center;
+  grid-auto-columns: 1fr;
+  grid-column-gap: 32px;
+  grid-row-gap: 32px;
+  grid-template-columns: 100px 1fr;
+  grid-template-rows: auto;
+}
+
+.text-sm-default {
+  font-size: 12px;
+  line-height: 1.3333333333333333;
+  letter-spacing: 0px;
+}
+
+.color-grey-600 {
+  color: var(--grey600-d5bebe21);
+}
+
+.text-sm-default.text-color-grey {
+  color: var(--textLightGrey-914158a7);
+}
+
+.text-color-grey {
+  color: var(--textLightGrey-914158a7);
+}
+
+.max-width-400 {
+  max-width: 400px;
+}
+
+#w-node-_7a799230-2b50-e065-a3a5-2bdcd9f31407-d9f31406 {
+  grid-column-start: span 1;
+  grid-column-end: span 1;
+  grid-row-start: span 1;
+  grid-row-end: span 1;
+}
+#w-node-_7a799230-2b50-e065-a3a5-2bdcd9f3140b-d9f31406 {
+  grid-column-start: span 1;
+  grid-column-end: span 1;
+  grid-row-start: span 1;
+  grid-row-end: span 1;
+}

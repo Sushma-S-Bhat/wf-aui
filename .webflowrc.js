@@ -24,7 +24,7 @@
 module.exports = {
   host: "https://api.webflow.com",
   rootDir: "./devlink",
-  siteId: "648708b2f7d889bb3eb81cf8",
-  authToken: "04eab477177c55c4d57586dc91b55fb6c70d0f3466b3c6acff4dfc5f4ffef02a", // An environment variable is recommended for this field.
+  siteId: process.env.AUI_SITE,
+  authToken: process.env.AUI_AUTH, // An environment variable is recommended for this field.
   cssModules: true
 }

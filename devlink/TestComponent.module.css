@@ -1,0 +1,8 @@
+._w-content {
+  display: block;
+}
+
+._w-loading {
+  padding: 18px;
+  background-color: var(--green200-3c062f81);
+}
