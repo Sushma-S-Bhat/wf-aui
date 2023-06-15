@@ -12,6 +12,11 @@ declare function CoachProfileLayout(props: {
   textBio?: React.ReactNode;
   slotSkill?: Types.Devlink.Slot;
   slotLanguage?: Types.Devlink.Slot;
-  onClickUpdate?: React.ReactNode;
-  isNotEditMode?: Types.Visibility.VisibilityConditions;
+  onClickEdit?: Types.Devlink.RuntimeProps;
+  onClickMeetingQueries?: Types.Devlink.RuntimeProps;
+  isEditVisible?: Types.Visibility.VisibilityConditions;
+  isProfileShow?: Types.Visibility.VisibilityConditions;
+  textPopupHeader?: React.ReactNode;
+  onClickChangePassword?: Types.Devlink.RuntimeProps;
+  onClickCalendlySettings?: Types.Devlink.RuntimeProps;
 }): React.JSX.Element;

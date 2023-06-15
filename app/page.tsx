@@ -1,8 +1,8 @@
-import { CoachLogin } from '@/devlink'
+import { CoachLogin, LoginPage } from '@/devlink'
 import React from 'react'
 
 export default function Signin() {
   return (
-    <CoachLogin/>
+    <LoginPage/>
   )
 }

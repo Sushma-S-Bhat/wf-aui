@@ -44,6 +44,10 @@
   align-self: flex-end;
 }
 
+.button.is-green.medium {
+  line-height: 1;
+}
+
 .button.is-blue {
   background-color: var(--blue600-aad8d97e);
 }
@@ -62,4 +66,8 @@
 .button.meeting:hover {
   background-color: var(--blue300-2a96c522);
   color: var(--grey700-7fbe857b);
+}
+
+.button.medium {
+  line-height: 1.2;
 }

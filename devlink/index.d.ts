@@ -26,6 +26,7 @@ export * from "./CoachProfileLayout";
 export * from "./CoachSkillOrLanguage";
 export * from "./EventPopupContent";
 export * from "./EventQa";
+export * from "./LoginPage";
 export * from "./RequestCandidatesListItem";
 export * from "./TestComponent";
 export * from "./TwoColumnPage";
