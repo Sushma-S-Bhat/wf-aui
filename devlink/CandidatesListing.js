@@ -41,7 +41,7 @@ export function CandidatesListing({
       ) : null}
       {isLoading ? (
         <_Builtin.Block
-          className={_utils.cx(_styles, "slot-candidate-grid")}
+          className={_utils.cx(_styles, "candidates-grid")}
           tag="div"
         >
           <_Builtin.Block

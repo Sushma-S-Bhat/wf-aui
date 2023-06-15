@@ -6,15 +6,17 @@ export default function CandidateListing() {
   return (
     <CandidatesListing
         isEmpty={false}
-        isLoading={false}
+        isLoading={false} 
         slotSearch={<div>Search Input Form</div>}
         slotCandidateListingCard={candidates.map((i) => (
           <CandidateListingCard
             textName={i.textName}
             textApplied={i.textApplied}
             textOffered={i.textOffered}
+            textDeclined={i.textDeclined}
+            //imageProfile={""}
             textRole={i.textRole}
-            //onClickCandidateCard={{onClick:()=>{window.location='/candidates/candidate'}}}
+            onClickCandidateCard={{onClick:()=>{window.location='/candidates/candidate'}}}
           />
         ))}
       />

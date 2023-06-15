@@ -391,7 +391,7 @@ export function CoachNavbar({
                       className={_utils.cx(_styles, "dashboard-more-wrapper")}
                       button={false}
                       options={{
-                        href: "/login",
+                        href: "/",
                       }}
                     >
                       <_Builtin.Block

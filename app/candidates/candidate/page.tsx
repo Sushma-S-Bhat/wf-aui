@@ -47,7 +47,9 @@ export default function FloatingNav() {
             textRole="Marketing Executive"
             textName="Sudhakar"
             textApplied={1}
+            imageProfilePic="https://upload.wikimedia.org/wikipedia/commons/f/fc/Qualcomm-Logo.svg"
             textOffered={3}
+            textDeclined={4}
             textEmail={"sudhakaranbhat@gmail.com"}
             textJobPreference={
               "looking for marketing executive role at bangalore"
@@ -58,8 +60,17 @@ export default function FloatingNav() {
         slotCandidateDetailTabs={
           <CandidateDetailTabs
             isJobEmpty={false}
-            isJobLoading={false}
+            isJobLoading={false} //job loading state
             isJobListing={joblist}
+            /*
+            isQAEmpty = {false}// for QA Empty state
+            slotQA ={} //for QA chat
+            isProgressEmpty = {} // for View Progress Empty State
+            slotProgress ={} //for showing tracker progress
+            //to switch to job detail, set isJobListing to false and set isJobDetail to true
+            slotSearchJob={} //search input form for jobs
+            slotPlanDetails={} //Plan details
+            */
             isJobDetail={jobDetail}
             slotJobDetails={slotDetail}
             onClickBack={{
@@ -67,7 +78,7 @@ export default function FloatingNav() {
                 back();
               },
             }}
-            slotCoachJobCard={newjobs.map((obj, i) => (
+            slotCoachJobCard={newjobs.map((obj, i) => ( //for display job cards
               <CoachJobCard
                 textJobTitle={obj.job_title}
                 imageLogo={obj.employer_logo?obj.employer_logo:''}
