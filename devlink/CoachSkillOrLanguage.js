@@ -1,9 +1,9 @@
 import React from "react";
 import * as _Builtin from "./_Builtin";
 import * as _utils from "./utils";
-import _styles from "./CoachSkill.module.css";
+import _styles from "./CoachSkillOrLanguage.module.css";
 
-export function CoachSkill({
+export function CoachSkillOrLanguage({
   as: _Component = _Builtin.Block,
   text = "Skill",
 }) {

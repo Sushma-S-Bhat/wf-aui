@@ -149,6 +149,10 @@
   grid-row-gap: 18px;
 }
 
+.profile-content.stretch {
+  flex: 1;
+}
+
 .text-lg-skeleton {
   font-family: 'Flow Circular';
   color: var(--skeletonGrey-4e9a134f);

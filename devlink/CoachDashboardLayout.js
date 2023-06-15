@@ -1,5 +1,6 @@
 import React from "react";
 import * as _Builtin from "./_Builtin";
+import { CoachActivityItem } from "./CoachActivityItem";
 import * as _utils from "./utils";
 import _styles from "./CoachDashboardLayout.module.css";
 
@@ -84,13 +85,18 @@ export function CoachDashboardLayout({
             >
               <_Builtin.HtmlEmbed
                 className={_utils.cx(_styles, "hide")}
-                value="%3Cstyle%3E%0A.job-activity-item-wrap%3Anth-last-child(1)%20.job-activity-item-separator%20%2C.job-activity-item-wrap%3Alast-child%20.job-activity-item-separator%7B%0Adisplay%3Anone%3B%0A%7D%0A%3C%2Fstyle%3E"
+                value="%3Cstyle%3E%0A.CoachDashboardLayout_job-activity-stack__9af7d%20.job-activity-item-wrap%3Anth-last-child(1)%20.CoachActivityItem_job-activity-item-separator__HfvHJ%7B%0Adisplay%3Anone%3B%0A%7D%0A%3C%2Fstyle%3E"
               />
               <_Builtin.Block
                 className={_utils.cx(_styles, "job-activity-stack")}
                 tag="div"
               >
-                {slotCoachActivityItem}
+                {slotCoachActivityItem ?? (
+                  <>
+                    <CoachActivityItem />
+                    <CoachActivityItem />
+                  </>
+                )}
               </_Builtin.Block>
             </_Builtin.Block>
           </_Builtin.Block>

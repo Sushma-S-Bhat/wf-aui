@@ -2,12 +2,18 @@
   background-color: var(--black-0fdbd865);
 }
 
+.coach-nav-bg {
+  background-color: var(--black-0fdbd865);
+}
+
 .coach-nav-container {
   display: flex;
   padding-right: 40px;
   padding-left: 40px;
   justify-content: space-between;
   align-items: center;
+
+  background-color: var(--black-0fdbd865);
 }
 
 @media screen and (max-width: 991px) {

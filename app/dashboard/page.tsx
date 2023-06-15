@@ -8,9 +8,9 @@ export default function Dashboard() {
       isActivityEmpty={false}
       slotCoachActivityItem={
         <>
-          <CoachActivityItem />
-          <CoachActivityItem />
-          <CoachActivityItem />
+          <CoachActivityItem textActivity="You suggested divya"/>
+          <CoachActivityItem textActivity="You suggested shwetha"/>
+          <CoachActivityItem textActivity="You suggested ravi"/>
         </>
       }
     />
