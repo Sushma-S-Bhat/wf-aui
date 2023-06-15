@@ -5,8 +5,6 @@ export * from "./devlinkContext";
 export * from "./interactions";
 export * from "./utils";
 export * from "./devlink";
-export * from "./ButtonPrimary";
-export * from "./ButtonSecondary";
 export * from "./CandidateDetailHeader";
 export * from "./CandidateDetailLayout";
 export * from "./CandidateDetailTabs";
