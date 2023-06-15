@@ -55,14 +55,6 @@
   letter-spacing: -0.45px;
 }
 
-.text-lg-bold.align-lext {
-  align-self: flex-start;
-}
-
-.text-grey-600 {
-  color: hsla(208.57142857142856, 9.17%, 44.90%, 1.00);
-}
-
 .text-align-center {
   text-align: center;
 }
@@ -83,20 +75,12 @@
   letter-spacing: 0px;
 }
 
-.color-grey-600 {
-  color: var(--grey600-d5bebe21);
-}
-
 .text-sm-default.text-color-grey {
   color: var(--textLightGrey-914158a7);
 }
 
 .text-color-grey {
   color: var(--textLightGrey-914158a7);
-}
-
-.max-width-400 {
-  max-width: 400px;
 }
 
 #w-node-_7a799230-2b50-e065-a3a5-2bdcd9f31407-d9f31406 {

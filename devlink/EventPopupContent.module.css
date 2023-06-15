@@ -28,14 +28,6 @@
   letter-spacing: -0.45px;
 }
 
-.text-lg-bold.align-lext {
-  align-self: flex-start;
-}
-
-.text-grey-600 {
-  color: hsla(208.57142857142856, 9.17%, 44.90%, 1.00);
-}
-
 .text-align-center {
   text-align: center;
 }
@@ -45,9 +37,4 @@
   flex-direction: column;
   grid-column-gap: 16px;
   grid-row-gap: 16px;
-}
-
-.stack-column.padding-horizontal {
-  padding-right: 14px;
-  padding-left: 14px;
 }

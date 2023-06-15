@@ -10,14 +10,6 @@
   letter-spacing: -0.15px;
 }
 
-.color-grey-600 {
-  color: var(--grey600-d5bebe21);
-}
-
-.text-md-default.color-grey-700 {
-  color: var(--grey700-7fbe857b);
-}
-
 .text-color-grey {
   color: var(--textLightGrey-914158a7);
 }
@@ -29,5 +21,5 @@
 .job-activity-item-separator {
   height: 24px;
   margin-left: 5px;
-  border-left: 1px solid black;
+  border-left: 2px solid var(--grey500-0d508ad8);
 }

@@ -19,10 +19,6 @@
   font-weight: 600;
 }
 
-.text-align-center {
-  text-align: center;
-}
-
 .margin-bottom-6 {
   margin-bottom: 6px;
 }
@@ -57,11 +53,6 @@
   flex-direction: column;
   grid-column-gap: 16px;
   grid-row-gap: 16px;
-}
-
-.stack-column.padding-horizontal {
-  padding-right: 14px;
-  padding-left: 14px;
 }
 
 .candidate-request-stack {
@@ -137,14 +128,6 @@
   color: var(--skeletonGrey-4e9a134f);
   font-size: 22px;
   line-height: 1;
-}
-
-.text-md-skeleton.text-color-dark-grey {
-  color: var(--textDarkGrey-65de823a);
-}
-
-.text-color-dark-grey {
-  color: var(--textDarkGrey-65de823a);
 }
 
 .coach-dashboard-content-right {

@@ -1,114 +1,3 @@
-.event-detail-popup-wrap {
-  position: fixed;
-  left: 0%;
-  top: 0%;
-  right: 0%;
-  bottom: 0%;
-  z-index: 6;
-
-  display: none;
-  justify-content: center;
-  align-items: center;
-
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7));
-
-  backdrop-filter: blur(5px);
-}
-
-.event-detail-popup {
-  display: flex;
-  min-width: 350px;
-  flex-direction: column;
-  border-radius: 8px;
-  background-color: var(--white-80449ce7);
-}
-
-.popup-header {
-  display: flex;
-  padding: 24px;
-  justify-content: space-between;
-  grid-column-gap: 32px;
-  grid-row-gap: 32px;
-
-  border-bottom: 1px solid var(--borderGrey-ea561a79);
-}
-
-.text-lg-bold {
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: 600;
-  letter-spacing: -0.45px;
-}
-
-.text-align-center {
-  text-align: center;
-}
-
-.event-popup-close {
-  display: flex;
-  width: 24px;
-  height: 24px;
-  padding: 4px;
-  justify-content: center;
-  align-items: center;
-
-  border-radius: 50%;
-
-  color: var(--grey600-d5bebe21);
-
-  cursor: pointer;
-}
-
-.event-popup-close:hover {
-  background-color: var(--bgGrey200-4f66792c);
-  color: var(--black-0fdbd865);
-}
-
-.tabs-menu {
-  display: flex;
-  align-items: center;
-  grid-column-gap: 10px;
-  grid-row-gap: 10px;
-}
-
-.tabs-menu.events {
-  margin-bottom: 32px;
-}
-
-.tablink {
-  padding: 8px 24px;
-  border: 1px solid var(--borderGrey-ea561a79);
-  border-radius: 100px;
-  background-color: var(--white-80449ce7);
-  transition: all 300ms ease;
-}
-
-.tablink:hover {
-  border-color: var(--black-0fdbd865);
-}
-
-.tablink:global(.w--current) {
-  background-color: var(--black-0fdbd865);
-  color: var(--white-80449ce7);
-}
-
-.empty-events {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  grid-column-gap: 24px;
-  grid-row-gap: 24px;
-
-  text-align: center;
-}
-
-.stack-column {
-  display: flex;
-  flex-direction: column;
-  grid-column-gap: 16px;
-  grid-row-gap: 16px;
-}
-
 .events-detail-wrapper {
   display: flex;
   padding: 12px 14px;
@@ -185,19 +74,6 @@
   }
 }
 
-.icon-embed {
-  display: flex;
-  width: 20px;
-  height: 20px;
-  justify-content: center;
-  align-items: center;
-}
-
-.icon-embed.skeleton {
-  border-radius: 6px;
-  background-color: var(--skeletonGrey-4e9a134f);
-}
-
 .coach-event-name {
   font-size: 16px;
   line-height: 20px;
@@ -217,17 +93,88 @@
   grid-column-gap: 16px;
 }
 
-.text-md-skeleton {
-  font-family: 'Flow Circular';
-  color: var(--skeletonGrey-4e9a134f);
-  font-size: 22px;
-  line-height: 1;
+.text-md-default {
+  letter-spacing: -0.15px;
+}
+
+.text-color-grey {
+  color: var(--textLightGrey-914158a7);
+}
+
+.text-color-dark-grey {
+  color: var(--textDarkGrey-65de823a);
 }
 
 .meeting-buttons-wrap {
   display: flex;
   align-items: center;
   grid-column-gap: 12px;
+}
+
+.button {
+  display: flex;
+  padding: 8px 16px;
+  justify-content: center;
+  align-items: center;
+  grid-column-gap: 8px;
+  grid-row-gap: 8px;
+
+  border-radius: 100px;
+
+  background-color: var(--black-0fdbd865);
+
+  transition: all 300ms ease;
+
+  color: var(--white-80449ce7);
+  line-height: 20px;
+  font-weight: 500;
+  text-decoration: none;
+
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: hsla(0, 0.00%, 0.00%, 0.80);
+}
+
+.button.is-green {
+  flex: 0 0 auto;
+  border: 1px solid var(--green500-287ff474);
+  background-color: var(--green600-40a2ee5f);
+  color: var(--white-80449ce7);
+  cursor: pointer;
+}
+
+.button.is-green:hover {
+  background-color: var(--green500-287ff474);
+}
+
+.button.is-green.small {
+  padding: 6px 8px;
+}
+
+.button.is-green.align-right {
+  align-self: flex-end;
+}
+
+.button.is-blue {
+  background-color: var(--blue600-aad8d97e);
+}
+
+.button.align-left {
+  align-self: flex-start;
+}
+
+.button.meeting {
+  padding: 8px 14px;
+  background-color: var(--blue400-49d60774);
+  font-size: 12px;
+  line-height: 1;
+}
+
+.button.meeting:hover {
+  background-color: var(--blue300-2a96c522);
+  color: var(--grey700-7fbe857b);
 }
 
 .view-details-button {

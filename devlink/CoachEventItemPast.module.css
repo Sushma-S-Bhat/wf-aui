@@ -1,6 +1,6 @@
 .events-detail-wrapper {
   display: flex;
-  padding: 10px 12px;
+  padding: 12px 14px;
   justify-content: space-between;
   align-items: center;
 
@@ -19,6 +19,14 @@
   background-color: var(--blue100-d2a1a159);
 }
 
+@media screen and (max-width: 479px) {
+  .events-detail-wrapper {
+    flex-wrap: wrap;
+    align-items: flex-start;
+    grid-row-gap: 12px;
+  }
+}
+
 .events-detail-wrapper.skeleton {
   padding-top: 5px;
   padding-bottom: 10px;
@@ -30,29 +38,47 @@
   background-color: var(--bgGrey100-ce47127d);
 }
 
+.events-detail-wrapper.past:hover {
+  background-color: var(--bgGrey100-ce47127d);
+}
+
 .events-detail-content {
   display: flex;
   flex-direction: row;
   align-items: center;
-  flex: 0 0 auto;
-  grid-column-gap: 16px;
+  flex: 1;
+  grid-column-gap: 32px;
   grid-row-gap: 16px;
 }
 
+@media screen and (max-width: 767px) {
+  .events-detail-content {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .events-detail-content {
+    grid-row-gap: 8px;
+  }
+}
+
+.event-image-name-wrap {
+  display: flex;
+  grid-column-gap: 12px;
+}
+
+@media screen and (max-width: 479px) {
+  .event-image-name-wrap {
+    grid-column-gap: 6px;
+  }
+}
+
 .coach-event-name {
-  padding-left: 6px;
   font-size: 16px;
   line-height: 20px;
   font-weight: 600;
   letter-spacing: -0.15px;
-}
-
-.coach-event-name.color-red-500 {
-  color: hsla(354.93506493506493, 66.96%, 54.90%, 1.00);
-}
-
-.coach-event-name.color-black {
-  color: hsla(0, 0.00%, 0.00%, 1.00);
 }
 
 .coach-event-name.skeleton {
@@ -60,11 +86,33 @@
   color: var(--skeletonGrey-4e9a134f);
 }
 
+.event-date-day-wrap {
+  display: flex;
+  min-width: 150px;
+  flex-direction: row;
+  grid-column-gap: 16px;
+}
+
+.text-md-default {
+  letter-spacing: -0.15px;
+}
+
+.text-color-grey {
+  color: var(--textLightGrey-914158a7);
+}
+
+.text-color-dark-grey {
+  color: var(--textDarkGrey-65de823a);
+}
+
 .view-details-button {
-  margin-top: 4px;
-  padding: 6px;
+  padding: 8px 10px;
 
   border-radius: 100px;
+
+  background-color: var(--green200-3c062f81);
+
+  transition: all 200ms ease;
 
   font-size: 12px;
   line-height: 1;
@@ -83,28 +131,4 @@
 
 .view-details-button.skeleton:hover {
   background-color: var(--skeletonGrey-4e9a134f);
-}
-
-.event-date-day-wrap {
-  min-width: 150px;
-}
-
-.text-md-default {
-  letter-spacing: -0.15px;
-}
-
-.color-grey-600 {
-  color: var(--grey600-d5bebe21);
-}
-
-.text-md-default.color-grey-700 {
-  color: var(--grey700-7fbe857b);
-}
-
-.text-color-grey {
-  color: var(--textLightGrey-914158a7);
-}
-
-.text-color-dark-grey {
-  color: var(--textDarkGrey-65de823a);
 }

@@ -10,11 +10,16 @@ export function CandidateDetailLayout({
 }) {
   return (
     <_Component
-      className={_utils.cx(_styles, "candidate-detail-page")}
+      className={_utils.cx(_styles, "candidate-detail-layout")}
       tag="div"
     >
-      <_Builtin.Block tag="div">{slotCandidateDetailHeader}</_Builtin.Block>
-      <_Builtin.Block tag="div">{slotCandidateDetailTabs}</_Builtin.Block>
+      <_Builtin.Block
+        className={_utils.cx(_styles, "candidate-detail-page")}
+        tag="div"
+      >
+        <_Builtin.Block tag="div">{slotCandidateDetailHeader}</_Builtin.Block>
+        <_Builtin.Block tag="div">{slotCandidateDetailTabs}</_Builtin.Block>
+      </_Builtin.Block>
     </_Component>
   );
 }

@@ -484,6 +484,446 @@ export function CandidatesListing({
               </_Builtin.Block>
             </_Builtin.Block>
           </_Builtin.Block>
+          <_Builtin.Block
+            className={_utils.cx(_styles, "career-candidate-card", "skeleton")}
+            tag="div"
+          >
+            <_Builtin.Block
+              className={_utils.cx(_styles, "candidate-main-detail")}
+              tag="div"
+            >
+              <_Builtin.Block
+                className={_utils.cx(_styles, "candidate-profilepic")}
+                tag="div"
+              />
+              <_Builtin.Block
+                className={_utils.cx(_styles, "profile-content")}
+                tag="div"
+              >
+                <_Builtin.Block
+                  className={_utils.cx(_styles, "text-lg-skeleton")}
+                  tag="div"
+                >
+                  {"Name"}
+                </_Builtin.Block>
+                <_Builtin.Block
+                  className={_utils.cx(_styles, "text-md-skeleton")}
+                  tag="div"
+                >
+                  {"This is the default text value"}
+                </_Builtin.Block>
+              </_Builtin.Block>
+            </_Builtin.Block>
+            <_Builtin.Block
+              className={_utils.cx(_styles, "candidate-progress-wrap")}
+              tag="div"
+            >
+              <_Builtin.Block
+                className={_utils.cx(_styles, "progress-name-text", "skeleton")}
+                tag="div"
+              >
+                {"Name's progress"}
+              </_Builtin.Block>
+              <_Builtin.Block
+                className={_utils.cx(_styles, "candidate-progress-grid")}
+                tag="div"
+              >
+                <_Builtin.Block
+                  className={_utils.cx(_styles, "candidate-progress-block")}
+                  id={_utils.cx(
+                    _styles,
+                    "w-node-_073c7ec2-c898-246f-eb42-26404d91d5ec-7aa4c0c8"
+                  )}
+                  tag="div"
+                >
+                  <_Builtin.Block
+                    className={_utils.cx(_styles, "text-xxxl-skeleton")}
+                    tag="div"
+                  >
+                    {"0"}
+                  </_Builtin.Block>
+                  <_Builtin.Block
+                    className={_utils.cx(_styles, "text-md-skeleton")}
+                    tag="div"
+                  >
+                    {"Apfed"}
+                  </_Builtin.Block>
+                </_Builtin.Block>
+                <_Builtin.Block
+                  className={_utils.cx(_styles, "candidate-progress-block")}
+                  id={_utils.cx(
+                    _styles,
+                    "w-node-_073c7ec2-c898-246f-eb42-26404d91d5f1-7aa4c0c8"
+                  )}
+                  tag="div"
+                >
+                  <_Builtin.Block
+                    className={_utils.cx(_styles, "text-xxxl-skeleton")}
+                    tag="div"
+                  >
+                    {"0"}
+                  </_Builtin.Block>
+                  <_Builtin.Block
+                    className={_utils.cx(_styles, "text-md-skeleton")}
+                    tag="div"
+                  >
+                    {"Offed"}
+                  </_Builtin.Block>
+                </_Builtin.Block>
+                <_Builtin.Block
+                  className={_utils.cx(_styles, "candidate-progress-block")}
+                  id={_utils.cx(
+                    _styles,
+                    "w-node-_073c7ec2-c898-246f-eb42-26404d91d5f6-7aa4c0c8"
+                  )}
+                  tag="div"
+                >
+                  <_Builtin.Block
+                    className={_utils.cx(_styles, "text-xxxl-skeleton")}
+                    tag="div"
+                  >
+                    {"0"}
+                  </_Builtin.Block>
+                  <_Builtin.Block
+                    className={_utils.cx(_styles, "text-md-skeleton")}
+                    tag="div"
+                  >
+                    {"Decli"}
+                  </_Builtin.Block>
+                </_Builtin.Block>
+              </_Builtin.Block>
+            </_Builtin.Block>
+          </_Builtin.Block>
+          <_Builtin.Block
+            className={_utils.cx(_styles, "career-candidate-card", "skeleton")}
+            tag="div"
+          >
+            <_Builtin.Block
+              className={_utils.cx(_styles, "candidate-main-detail")}
+              tag="div"
+            >
+              <_Builtin.Block
+                className={_utils.cx(_styles, "candidate-profilepic")}
+                tag="div"
+              />
+              <_Builtin.Block
+                className={_utils.cx(_styles, "profile-content")}
+                tag="div"
+              >
+                <_Builtin.Block
+                  className={_utils.cx(_styles, "text-lg-skeleton")}
+                  tag="div"
+                >
+                  {"Name"}
+                </_Builtin.Block>
+                <_Builtin.Block
+                  className={_utils.cx(_styles, "text-md-skeleton")}
+                  tag="div"
+                >
+                  {"This is the default text value"}
+                </_Builtin.Block>
+              </_Builtin.Block>
+            </_Builtin.Block>
+            <_Builtin.Block
+              className={_utils.cx(_styles, "candidate-progress-wrap")}
+              tag="div"
+            >
+              <_Builtin.Block
+                className={_utils.cx(_styles, "progress-name-text", "skeleton")}
+                tag="div"
+              >
+                {"Name's progress"}
+              </_Builtin.Block>
+              <_Builtin.Block
+                className={_utils.cx(_styles, "candidate-progress-grid")}
+                tag="div"
+              >
+                <_Builtin.Block
+                  className={_utils.cx(_styles, "candidate-progress-block")}
+                  id={_utils.cx(
+                    _styles,
+                    "w-node-a27ec540-2c0b-c2fd-1117-cc7472823e01-7aa4c0c8"
+                  )}
+                  tag="div"
+                >
+                  <_Builtin.Block
+                    className={_utils.cx(_styles, "text-xxxl-skeleton")}
+                    tag="div"
+                  >
+                    {"0"}
+                  </_Builtin.Block>
+                  <_Builtin.Block
+                    className={_utils.cx(_styles, "text-md-skeleton")}
+                    tag="div"
+                  >
+                    {"Apfed"}
+                  </_Builtin.Block>
+                </_Builtin.Block>
+                <_Builtin.Block
+                  className={_utils.cx(_styles, "candidate-progress-block")}
+                  id={_utils.cx(
+                    _styles,
+                    "w-node-a27ec540-2c0b-c2fd-1117-cc7472823e06-7aa4c0c8"
+                  )}
+                  tag="div"
+                >
+                  <_Builtin.Block
+                    className={_utils.cx(_styles, "text-xxxl-skeleton")}
+                    tag="div"
+                  >
+                    {"0"}
+                  </_Builtin.Block>
+                  <_Builtin.Block
+                    className={_utils.cx(_styles, "text-md-skeleton")}
+                    tag="div"
+                  >
+                    {"Offed"}
+                  </_Builtin.Block>
+                </_Builtin.Block>
+                <_Builtin.Block
+                  className={_utils.cx(_styles, "candidate-progress-block")}
+                  id={_utils.cx(
+                    _styles,
+                    "w-node-a27ec540-2c0b-c2fd-1117-cc7472823e0b-7aa4c0c8"
+                  )}
+                  tag="div"
+                >
+                  <_Builtin.Block
+                    className={_utils.cx(_styles, "text-xxxl-skeleton")}
+                    tag="div"
+                  >
+                    {"0"}
+                  </_Builtin.Block>
+                  <_Builtin.Block
+                    className={_utils.cx(_styles, "text-md-skeleton")}
+                    tag="div"
+                  >
+                    {"Decli"}
+                  </_Builtin.Block>
+                </_Builtin.Block>
+              </_Builtin.Block>
+            </_Builtin.Block>
+          </_Builtin.Block>
+          <_Builtin.Block
+            className={_utils.cx(_styles, "career-candidate-card", "skeleton")}
+            tag="div"
+          >
+            <_Builtin.Block
+              className={_utils.cx(_styles, "candidate-main-detail")}
+              tag="div"
+            >
+              <_Builtin.Block
+                className={_utils.cx(_styles, "candidate-profilepic")}
+                tag="div"
+              />
+              <_Builtin.Block
+                className={_utils.cx(_styles, "profile-content")}
+                tag="div"
+              >
+                <_Builtin.Block
+                  className={_utils.cx(_styles, "text-lg-skeleton")}
+                  tag="div"
+                >
+                  {"Name"}
+                </_Builtin.Block>
+                <_Builtin.Block
+                  className={_utils.cx(_styles, "text-md-skeleton")}
+                  tag="div"
+                >
+                  {"This is the default text value"}
+                </_Builtin.Block>
+              </_Builtin.Block>
+            </_Builtin.Block>
+            <_Builtin.Block
+              className={_utils.cx(_styles, "candidate-progress-wrap")}
+              tag="div"
+            >
+              <_Builtin.Block
+                className={_utils.cx(_styles, "progress-name-text", "skeleton")}
+                tag="div"
+              >
+                {"Name's progress"}
+              </_Builtin.Block>
+              <_Builtin.Block
+                className={_utils.cx(_styles, "candidate-progress-grid")}
+                tag="div"
+              >
+                <_Builtin.Block
+                  className={_utils.cx(_styles, "candidate-progress-block")}
+                  id={_utils.cx(
+                    _styles,
+                    "w-node-_09806ead-ad9f-24d3-1d12-86e596b2b5cb-7aa4c0c8"
+                  )}
+                  tag="div"
+                >
+                  <_Builtin.Block
+                    className={_utils.cx(_styles, "text-xxxl-skeleton")}
+                    tag="div"
+                  >
+                    {"0"}
+                  </_Builtin.Block>
+                  <_Builtin.Block
+                    className={_utils.cx(_styles, "text-md-skeleton")}
+                    tag="div"
+                  >
+                    {"Apfed"}
+                  </_Builtin.Block>
+                </_Builtin.Block>
+                <_Builtin.Block
+                  className={_utils.cx(_styles, "candidate-progress-block")}
+                  id={_utils.cx(
+                    _styles,
+                    "w-node-_09806ead-ad9f-24d3-1d12-86e596b2b5d0-7aa4c0c8"
+                  )}
+                  tag="div"
+                >
+                  <_Builtin.Block
+                    className={_utils.cx(_styles, "text-xxxl-skeleton")}
+                    tag="div"
+                  >
+                    {"0"}
+                  </_Builtin.Block>
+                  <_Builtin.Block
+                    className={_utils.cx(_styles, "text-md-skeleton")}
+                    tag="div"
+                  >
+                    {"Offed"}
+                  </_Builtin.Block>
+                </_Builtin.Block>
+                <_Builtin.Block
+                  className={_utils.cx(_styles, "candidate-progress-block")}
+                  id={_utils.cx(
+                    _styles,
+                    "w-node-_09806ead-ad9f-24d3-1d12-86e596b2b5d5-7aa4c0c8"
+                  )}
+                  tag="div"
+                >
+                  <_Builtin.Block
+                    className={_utils.cx(_styles, "text-xxxl-skeleton")}
+                    tag="div"
+                  >
+                    {"0"}
+                  </_Builtin.Block>
+                  <_Builtin.Block
+                    className={_utils.cx(_styles, "text-md-skeleton")}
+                    tag="div"
+                  >
+                    {"Decli"}
+                  </_Builtin.Block>
+                </_Builtin.Block>
+              </_Builtin.Block>
+            </_Builtin.Block>
+          </_Builtin.Block>
+          <_Builtin.Block
+            className={_utils.cx(_styles, "career-candidate-card", "skeleton")}
+            tag="div"
+          >
+            <_Builtin.Block
+              className={_utils.cx(_styles, "candidate-main-detail")}
+              tag="div"
+            >
+              <_Builtin.Block
+                className={_utils.cx(_styles, "candidate-profilepic")}
+                tag="div"
+              />
+              <_Builtin.Block
+                className={_utils.cx(_styles, "profile-content")}
+                tag="div"
+              >
+                <_Builtin.Block
+                  className={_utils.cx(_styles, "text-lg-skeleton")}
+                  tag="div"
+                >
+                  {"Name"}
+                </_Builtin.Block>
+                <_Builtin.Block
+                  className={_utils.cx(_styles, "text-md-skeleton")}
+                  tag="div"
+                >
+                  {"This is the default text value"}
+                </_Builtin.Block>
+              </_Builtin.Block>
+            </_Builtin.Block>
+            <_Builtin.Block
+              className={_utils.cx(_styles, "candidate-progress-wrap")}
+              tag="div"
+            >
+              <_Builtin.Block
+                className={_utils.cx(_styles, "progress-name-text", "skeleton")}
+                tag="div"
+              >
+                {"Name's progress"}
+              </_Builtin.Block>
+              <_Builtin.Block
+                className={_utils.cx(_styles, "candidate-progress-grid")}
+                tag="div"
+              >
+                <_Builtin.Block
+                  className={_utils.cx(_styles, "candidate-progress-block")}
+                  id={_utils.cx(
+                    _styles,
+                    "w-node-ccb844fb-cc6c-9798-5ffa-2866bc8ba8fc-7aa4c0c8"
+                  )}
+                  tag="div"
+                >
+                  <_Builtin.Block
+                    className={_utils.cx(_styles, "text-xxxl-skeleton")}
+                    tag="div"
+                  >
+                    {"0"}
+                  </_Builtin.Block>
+                  <_Builtin.Block
+                    className={_utils.cx(_styles, "text-md-skeleton")}
+                    tag="div"
+                  >
+                    {"Apfed"}
+                  </_Builtin.Block>
+                </_Builtin.Block>
+                <_Builtin.Block
+                  className={_utils.cx(_styles, "candidate-progress-block")}
+                  id={_utils.cx(
+                    _styles,
+                    "w-node-ccb844fb-cc6c-9798-5ffa-2866bc8ba901-7aa4c0c8"
+                  )}
+                  tag="div"
+                >
+                  <_Builtin.Block
+                    className={_utils.cx(_styles, "text-xxxl-skeleton")}
+                    tag="div"
+                  >
+                    {"0"}
+                  </_Builtin.Block>
+                  <_Builtin.Block
+                    className={_utils.cx(_styles, "text-md-skeleton")}
+                    tag="div"
+                  >
+                    {"Offed"}
+                  </_Builtin.Block>
+                </_Builtin.Block>
+                <_Builtin.Block
+                  className={_utils.cx(_styles, "candidate-progress-block")}
+                  id={_utils.cx(
+                    _styles,
+                    "w-node-ccb844fb-cc6c-9798-5ffa-2866bc8ba906-7aa4c0c8"
+                  )}
+                  tag="div"
+                >
+                  <_Builtin.Block
+                    className={_utils.cx(_styles, "text-xxxl-skeleton")}
+                    tag="div"
+                  >
+                    {"0"}
+                  </_Builtin.Block>
+                  <_Builtin.Block
+                    className={_utils.cx(_styles, "text-md-skeleton")}
+                    tag="div"
+                  >
+                    {"Decli"}
+                  </_Builtin.Block>
+                </_Builtin.Block>
+              </_Builtin.Block>
+            </_Builtin.Block>
+          </_Builtin.Block>
         </_Builtin.Block>
       ) : null}
       <_Builtin.Block

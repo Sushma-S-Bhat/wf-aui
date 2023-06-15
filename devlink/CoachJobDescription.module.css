@@ -24,10 +24,6 @@
   font-weight: 600;
 }
 
-.text-align-center {
-  text-align: center;
-}
-
 .margin-bottom-6 {
   margin-bottom: 6px;
 }
@@ -58,11 +54,6 @@
   }
 }
 
-.coach-job-main-detail.skeleton:hover {
-  border-color: var(--borderGrey-ea561a79);
-  background-color: var(--bgGrey100-ce47127d);
-}
-
 .coach-job-logo-wrap {
   position: relative;
 
@@ -78,20 +69,6 @@
   background-color: var(--skeletonGrey-4e9a134f);
 
   object-fit: cover;
-}
-
-.coach-job-logo-wrap.hide {
-  display: none;
-}
-
-.hide {
-  display: none;
-}
-
-@media screen and (max-width: 479px) {
-  .hide {
-    display: none;
-  }
 }
 
 .job-avatar-letter {
@@ -142,25 +119,8 @@
   }
 }
 
-.coach-detail-row-stack.align-start {
-  justify-content: flex-start;
-}
-
 .coach-detail-row-stack.stretch {
   align-items: stretch;
-}
-
-.coach-detail-row-stack.gap-24 {
-  justify-content: flex-start;
-  grid-column-gap: 24px;
-  grid-row-gap: 24px;
-}
-
-@media screen and (max-width: 767px) {
-  .coach-detail-row-stack.gap-24 {
-    grid-column-gap: 12px;
-    grid-row-gap: 6px;
-  }
 }
 
 .coach-detail-row-stack.gap-40 {
@@ -181,12 +141,8 @@
   letter-spacing: -0.45px;
 }
 
-.text-lg-bold.align-lext {
-  align-self: flex-start;
-}
-
-.text-grey-600 {
-  color: hsla(208.57142857142856, 9.17%, 44.90%, 1.00);
+.text-align-center {
+  text-align: center;
 }
 
 .job-pills-wrap {
@@ -208,21 +164,8 @@
   text-transform: capitalize;
 }
 
-.job-type-pill.skeleton {
-  background-color: var(--borderGrey-ea561a79);
-  color: var(--skeletonGrey-4e9a134f);
-}
-
 .text-md-default {
   letter-spacing: -0.15px;
-}
-
-.color-grey-600 {
-  color: var(--grey600-d5bebe21);
-}
-
-.text-md-default.color-grey-700 {
-  color: var(--grey700-7fbe857b);
 }
 
 .text-color-grey {
@@ -271,16 +214,6 @@
   background-color: hsla(0, 0.00%, 0.00%, 0.80);
 }
 
-.button.is-kale {
-  border: 1.5px solid transparent;
-  background-color: var(--kale600-c60cbc05);
-  color: var(--white-80449ce7);
-}
-
-.button.is-kale:hover {
-  border-color: var(--black-0fdbd865);
-}
-
 .button.is-green {
   flex: 0 0 auto;
   border: 1px solid var(--green500-287ff474);
@@ -291,37 +224,6 @@
 
 .button.is-green:hover {
   background-color: var(--green500-287ff474);
-}
-
-.button.is-green.loading-button {
-  position: absolute;
-  left: 0%;
-  top: 0%;
-  right: 0%;
-  bottom: 0%;
-  z-index: 2;
-
-  display: flex;
-
-  border-style: solid;
-  border-color: var(--grey400-863ed4b5);
-
-  background-color: var(--grey400-863ed4b5);
-}
-
-.button.is-green.view-button {
-  position: absolute;
-  left: 0%;
-  top: 0%;
-  right: 0%;
-  bottom: 0%;
-  z-index: 1;
-
-  display: flex;
-}
-
-.button.is-green.hide {
-  display: none;
 }
 
 .button.is-green.small {
@@ -336,49 +238,20 @@
   background-color: var(--blue600-aad8d97e);
 }
 
-.button.is-blue.rewrite {
-  position: absolute;
-  left: 0%;
-  top: 0%;
-  right: 0%;
-  bottom: 0%;
-  z-index: 1;
-
-  width: 100%;
-}
-
-.button.is-light-green {
-  background-color: var(--green200-3c062f81);
-  color: var(--grey600-d5bebe21);
-}
-
-.button.is-light-green.is-small {
-  padding: 6px 12px;
-}
-
-.button.is-light-green.activbe-btn {
-  position: absolute;
-  left: 0%;
-  top: 0%;
-  right: 0%;
-  bottom: 0%;
-  z-index: 2;
-
-  padding: 6px 12px;
-}
-
-.button.disabled {
-  background-color: var(--grey200-9ba653f1);
-  opacity: 0.6;
-  color: var(--grey600-d5bebe21);
-}
-
-.button.draft-now {
-  width: 123px;
-}
-
 .button.align-left {
   align-self: flex-start;
+}
+
+.button.meeting {
+  padding: 8px 14px;
+  background-color: var(--blue400-49d60774);
+  font-size: 12px;
+  line-height: 1;
+}
+
+.button.meeting:hover {
+  background-color: var(--blue300-2a96c522);
+  color: var(--grey700-7fbe857b);
 }
 
 .link-embed-icon {
@@ -457,12 +330,6 @@
   display: flex;
   align-items: center;
   grid-column-gap: 6px;
-}
-
-.text-lg-default {
-  font-size: 18px;
-  line-height: 24px;
-  letter-spacing: -0.45px;
 }
 
 .original-job-link-wrap.text-md-bold {

@@ -1,14 +1,7 @@
 'use client'
 import React from 'react'
 import { CandidatesListing,CandidateListingCard } from '@/devlink'
-const candidates = [
-    { textRole: "Manager", textApplied: 2, textOffered: 3, textName: "Sushma" },
-    { textRole: "Manager", textApplied: 2, textOffered: 3, textName: "Krishna" },
-    { textRole: "Manager", textApplied: 2, textOffered: 3, textName: "Radha" },
-    { textRole: "Manager", textApplied: 2, textOffered: 3, textName: "Durga" },
-    { textRole: "Manager", textApplied: 2, textOffered: 3, textName: "Shivani" },
-    { textRole: "Manager", textApplied: 2, textOffered: 3, textName: "Shiva" },
-  ];
+import candidates from '../../data/candidates'
 export default function CandidateListing() {
   return (
     <CandidatesListing
@@ -21,7 +14,7 @@ export default function CandidateListing() {
             textApplied={i.textApplied}
             textOffered={i.textOffered}
             textRole={i.textRole}
-            onClickCandidateCard={{onClick:()=>{window.location='/candidates/candidate'}}}
+            //onClickCandidateCard={{onClick:()=>{window.location='/candidates/candidate'}}}
           />
         ))}
       />

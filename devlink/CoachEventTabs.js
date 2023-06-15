@@ -108,7 +108,7 @@ export function CoachEventTabs({
                     className={_utils.cx(
                       _styles,
                       "events-detail-wrapper",
-                      "skeleton"
+                      "past"
                     )}
                     tag="div"
                   >
@@ -117,10 +117,17 @@ export function CoachEventTabs({
                       tag="div"
                     >
                       <_Builtin.Block
-                        className={_utils.cx(_styles, "icon-embed", "skeleton")}
+                        className={_utils.cx(_styles, "event-image-name-wrap")}
                         tag="div"
-                      />
-                      <_Builtin.Block tag="div">
+                      >
+                        <_Builtin.Block
+                          className={_utils.cx(
+                            _styles,
+                            "icon-embed",
+                            "skeleton"
+                          )}
+                          tag="div"
+                        />
                         <_Builtin.Block
                           className={_utils.cx(
                             _styles,
@@ -131,33 +138,48 @@ export function CoachEventTabs({
                         >
                           {"Name"}
                         </_Builtin.Block>
+                      </_Builtin.Block>
+                      <_Builtin.Block
+                        className={_utils.cx(_styles, "event-date-day-wrap")}
+                        tag="div"
+                      >
                         <_Builtin.Block
-                          className={_utils.cx(
-                            _styles,
-                            "view-details-button",
-                            "skeleton"
-                          )}
+                          className={_utils.cx(_styles, "text-md-skeleton")}
                           tag="div"
                         >
-                          {"View details"}
+                          {"23/253"}
+                        </_Builtin.Block>
+                        <_Builtin.Block
+                          className={_utils.cx(_styles, "text-md-skeleton")}
+                          tag="div"
+                        >
+                          {"Thurs"}
                         </_Builtin.Block>
                       </_Builtin.Block>
                     </_Builtin.Block>
                     <_Builtin.Block
-                      className={_utils.cx(_styles, "event-date-day-wrap")}
+                      className={_utils.cx(_styles, "meeting-buttons-wrap")}
                       tag="div"
                     >
                       <_Builtin.Block
-                        className={_utils.cx(_styles, "text-md-skeleton")}
+                        className={_utils.cx(
+                          _styles,
+                          "view-details-button",
+                          "skeleton"
+                        )}
                         tag="div"
                       >
-                        {"Date"}
+                        {"Details"}
                       </_Builtin.Block>
                       <_Builtin.Block
-                        className={_utils.cx(_styles, "text-md-skeleton")}
+                        className={_utils.cx(
+                          _styles,
+                          "view-details-button",
+                          "skeleton"
+                        )}
                         tag="div"
                       >
-                        {"Day"}
+                        {"joini meet"}
                       </_Builtin.Block>
                     </_Builtin.Block>
                   </_Builtin.Block>
@@ -165,7 +187,7 @@ export function CoachEventTabs({
                     className={_utils.cx(
                       _styles,
                       "events-detail-wrapper",
-                      "skeleton"
+                      "past"
                     )}
                     tag="div"
                   >
@@ -174,10 +196,17 @@ export function CoachEventTabs({
                       tag="div"
                     >
                       <_Builtin.Block
-                        className={_utils.cx(_styles, "icon-embed", "skeleton")}
+                        className={_utils.cx(_styles, "event-image-name-wrap")}
                         tag="div"
-                      />
-                      <_Builtin.Block tag="div">
+                      >
+                        <_Builtin.Block
+                          className={_utils.cx(
+                            _styles,
+                            "icon-embed",
+                            "skeleton"
+                          )}
+                          tag="div"
+                        />
                         <_Builtin.Block
                           className={_utils.cx(
                             _styles,
@@ -188,33 +217,48 @@ export function CoachEventTabs({
                         >
                           {"Name"}
                         </_Builtin.Block>
+                      </_Builtin.Block>
+                      <_Builtin.Block
+                        className={_utils.cx(_styles, "event-date-day-wrap")}
+                        tag="div"
+                      >
                         <_Builtin.Block
-                          className={_utils.cx(
-                            _styles,
-                            "view-details-button",
-                            "skeleton"
-                          )}
+                          className={_utils.cx(_styles, "text-md-skeleton")}
                           tag="div"
                         >
-                          {"View details"}
+                          {"23/253"}
+                        </_Builtin.Block>
+                        <_Builtin.Block
+                          className={_utils.cx(_styles, "text-md-skeleton")}
+                          tag="div"
+                        >
+                          {"Thurs"}
                         </_Builtin.Block>
                       </_Builtin.Block>
                     </_Builtin.Block>
                     <_Builtin.Block
-                      className={_utils.cx(_styles, "event-date-day-wrap")}
+                      className={_utils.cx(_styles, "meeting-buttons-wrap")}
                       tag="div"
                     >
                       <_Builtin.Block
-                        className={_utils.cx(_styles, "text-md-skeleton")}
+                        className={_utils.cx(
+                          _styles,
+                          "view-details-button",
+                          "skeleton"
+                        )}
                         tag="div"
                       >
-                        {"Date"}
+                        {"Details"}
                       </_Builtin.Block>
                       <_Builtin.Block
-                        className={_utils.cx(_styles, "text-md-skeleton")}
+                        className={_utils.cx(
+                          _styles,
+                          "view-details-button",
+                          "skeleton"
+                        )}
                         tag="div"
                       >
-                        {"Day"}
+                        {"joini meet"}
                       </_Builtin.Block>
                     </_Builtin.Block>
                   </_Builtin.Block>
@@ -222,7 +266,7 @@ export function CoachEventTabs({
                     className={_utils.cx(
                       _styles,
                       "events-detail-wrapper",
-                      "skeleton"
+                      "past"
                     )}
                     tag="div"
                   >
@@ -231,10 +275,17 @@ export function CoachEventTabs({
                       tag="div"
                     >
                       <_Builtin.Block
-                        className={_utils.cx(_styles, "icon-embed", "skeleton")}
+                        className={_utils.cx(_styles, "event-image-name-wrap")}
                         tag="div"
-                      />
-                      <_Builtin.Block tag="div">
+                      >
+                        <_Builtin.Block
+                          className={_utils.cx(
+                            _styles,
+                            "icon-embed",
+                            "skeleton"
+                          )}
+                          tag="div"
+                        />
                         <_Builtin.Block
                           className={_utils.cx(
                             _styles,
@@ -245,33 +296,48 @@ export function CoachEventTabs({
                         >
                           {"Name"}
                         </_Builtin.Block>
+                      </_Builtin.Block>
+                      <_Builtin.Block
+                        className={_utils.cx(_styles, "event-date-day-wrap")}
+                        tag="div"
+                      >
                         <_Builtin.Block
-                          className={_utils.cx(
-                            _styles,
-                            "view-details-button",
-                            "skeleton"
-                          )}
+                          className={_utils.cx(_styles, "text-md-skeleton")}
                           tag="div"
                         >
-                          {"View details"}
+                          {"23/253"}
+                        </_Builtin.Block>
+                        <_Builtin.Block
+                          className={_utils.cx(_styles, "text-md-skeleton")}
+                          tag="div"
+                        >
+                          {"Thurs"}
                         </_Builtin.Block>
                       </_Builtin.Block>
                     </_Builtin.Block>
                     <_Builtin.Block
-                      className={_utils.cx(_styles, "event-date-day-wrap")}
+                      className={_utils.cx(_styles, "meeting-buttons-wrap")}
                       tag="div"
                     >
                       <_Builtin.Block
-                        className={_utils.cx(_styles, "text-md-skeleton")}
+                        className={_utils.cx(
+                          _styles,
+                          "view-details-button",
+                          "skeleton"
+                        )}
                         tag="div"
                       >
-                        {"Date"}
+                        {"Details"}
                       </_Builtin.Block>
                       <_Builtin.Block
-                        className={_utils.cx(_styles, "text-md-skeleton")}
+                        className={_utils.cx(
+                          _styles,
+                          "view-details-button",
+                          "skeleton"
+                        )}
                         tag="div"
                       >
-                        {"Day"}
+                        {"joini meet"}
                       </_Builtin.Block>
                     </_Builtin.Block>
                   </_Builtin.Block>
@@ -279,7 +345,7 @@ export function CoachEventTabs({
                     className={_utils.cx(
                       _styles,
                       "events-detail-wrapper",
-                      "skeleton"
+                      "past"
                     )}
                     tag="div"
                   >
@@ -288,10 +354,17 @@ export function CoachEventTabs({
                       tag="div"
                     >
                       <_Builtin.Block
-                        className={_utils.cx(_styles, "icon-embed", "skeleton")}
+                        className={_utils.cx(_styles, "event-image-name-wrap")}
                         tag="div"
-                      />
-                      <_Builtin.Block tag="div">
+                      >
+                        <_Builtin.Block
+                          className={_utils.cx(
+                            _styles,
+                            "icon-embed",
+                            "skeleton"
+                          )}
+                          tag="div"
+                        />
                         <_Builtin.Block
                           className={_utils.cx(
                             _styles,
@@ -302,33 +375,48 @@ export function CoachEventTabs({
                         >
                           {"Name"}
                         </_Builtin.Block>
+                      </_Builtin.Block>
+                      <_Builtin.Block
+                        className={_utils.cx(_styles, "event-date-day-wrap")}
+                        tag="div"
+                      >
                         <_Builtin.Block
-                          className={_utils.cx(
-                            _styles,
-                            "view-details-button",
-                            "skeleton"
-                          )}
+                          className={_utils.cx(_styles, "text-md-skeleton")}
                           tag="div"
                         >
-                          {"View details"}
+                          {"23/253"}
+                        </_Builtin.Block>
+                        <_Builtin.Block
+                          className={_utils.cx(_styles, "text-md-skeleton")}
+                          tag="div"
+                        >
+                          {"Thurs"}
                         </_Builtin.Block>
                       </_Builtin.Block>
                     </_Builtin.Block>
                     <_Builtin.Block
-                      className={_utils.cx(_styles, "event-date-day-wrap")}
+                      className={_utils.cx(_styles, "meeting-buttons-wrap")}
                       tag="div"
                     >
                       <_Builtin.Block
-                        className={_utils.cx(_styles, "text-md-skeleton")}
+                        className={_utils.cx(
+                          _styles,
+                          "view-details-button",
+                          "skeleton"
+                        )}
                         tag="div"
                       >
-                        {"Date"}
+                        {"Details"}
                       </_Builtin.Block>
                       <_Builtin.Block
-                        className={_utils.cx(_styles, "text-md-skeleton")}
+                        className={_utils.cx(
+                          _styles,
+                          "view-details-button",
+                          "skeleton"
+                        )}
                         tag="div"
                       >
-                        {"Day"}
+                        {"joini meet"}
                       </_Builtin.Block>
                     </_Builtin.Block>
                   </_Builtin.Block>
@@ -336,7 +424,7 @@ export function CoachEventTabs({
                     className={_utils.cx(
                       _styles,
                       "events-detail-wrapper",
-                      "skeleton"
+                      "past"
                     )}
                     tag="div"
                   >
@@ -345,10 +433,17 @@ export function CoachEventTabs({
                       tag="div"
                     >
                       <_Builtin.Block
-                        className={_utils.cx(_styles, "icon-embed", "skeleton")}
+                        className={_utils.cx(_styles, "event-image-name-wrap")}
                         tag="div"
-                      />
-                      <_Builtin.Block tag="div">
+                      >
+                        <_Builtin.Block
+                          className={_utils.cx(
+                            _styles,
+                            "icon-embed",
+                            "skeleton"
+                          )}
+                          tag="div"
+                        />
                         <_Builtin.Block
                           className={_utils.cx(
                             _styles,
@@ -359,33 +454,127 @@ export function CoachEventTabs({
                         >
                           {"Name"}
                         </_Builtin.Block>
+                      </_Builtin.Block>
+                      <_Builtin.Block
+                        className={_utils.cx(_styles, "event-date-day-wrap")}
+                        tag="div"
+                      >
                         <_Builtin.Block
-                          className={_utils.cx(
-                            _styles,
-                            "view-details-button",
-                            "skeleton"
-                          )}
+                          className={_utils.cx(_styles, "text-md-skeleton")}
                           tag="div"
                         >
-                          {"View details"}
+                          {"23/253"}
+                        </_Builtin.Block>
+                        <_Builtin.Block
+                          className={_utils.cx(_styles, "text-md-skeleton")}
+                          tag="div"
+                        >
+                          {"Thurs"}
                         </_Builtin.Block>
                       </_Builtin.Block>
                     </_Builtin.Block>
                     <_Builtin.Block
-                      className={_utils.cx(_styles, "event-date-day-wrap")}
+                      className={_utils.cx(_styles, "meeting-buttons-wrap")}
                       tag="div"
                     >
                       <_Builtin.Block
-                        className={_utils.cx(_styles, "text-md-skeleton")}
+                        className={_utils.cx(
+                          _styles,
+                          "view-details-button",
+                          "skeleton"
+                        )}
                         tag="div"
                       >
-                        {"Date"}
+                        {"Details"}
                       </_Builtin.Block>
                       <_Builtin.Block
-                        className={_utils.cx(_styles, "text-md-skeleton")}
+                        className={_utils.cx(
+                          _styles,
+                          "view-details-button",
+                          "skeleton"
+                        )}
                         tag="div"
                       >
-                        {"Day"}
+                        {"joini meet"}
+                      </_Builtin.Block>
+                    </_Builtin.Block>
+                  </_Builtin.Block>
+                  <_Builtin.Block
+                    className={_utils.cx(
+                      _styles,
+                      "events-detail-wrapper",
+                      "past"
+                    )}
+                    tag="div"
+                  >
+                    <_Builtin.Block
+                      className={_utils.cx(_styles, "events-detail-content")}
+                      tag="div"
+                    >
+                      <_Builtin.Block
+                        className={_utils.cx(_styles, "event-image-name-wrap")}
+                        tag="div"
+                      >
+                        <_Builtin.Block
+                          className={_utils.cx(
+                            _styles,
+                            "icon-embed",
+                            "skeleton"
+                          )}
+                          tag="div"
+                        />
+                        <_Builtin.Block
+                          className={_utils.cx(
+                            _styles,
+                            "coach-event-name",
+                            "skeleton"
+                          )}
+                          tag="div"
+                        >
+                          {"Name"}
+                        </_Builtin.Block>
+                      </_Builtin.Block>
+                      <_Builtin.Block
+                        className={_utils.cx(_styles, "event-date-day-wrap")}
+                        tag="div"
+                      >
+                        <_Builtin.Block
+                          className={_utils.cx(_styles, "text-md-skeleton")}
+                          tag="div"
+                        >
+                          {"23/253"}
+                        </_Builtin.Block>
+                        <_Builtin.Block
+                          className={_utils.cx(_styles, "text-md-skeleton")}
+                          tag="div"
+                        >
+                          {"Thurs"}
+                        </_Builtin.Block>
+                      </_Builtin.Block>
+                    </_Builtin.Block>
+                    <_Builtin.Block
+                      className={_utils.cx(_styles, "meeting-buttons-wrap")}
+                      tag="div"
+                    >
+                      <_Builtin.Block
+                        className={_utils.cx(
+                          _styles,
+                          "view-details-button",
+                          "skeleton"
+                        )}
+                        tag="div"
+                      >
+                        {"Details"}
+                      </_Builtin.Block>
+                      <_Builtin.Block
+                        className={_utils.cx(
+                          _styles,
+                          "view-details-button",
+                          "skeleton"
+                        )}
+                        tag="div"
+                      >
+                        {"joini meet"}
                       </_Builtin.Block>
                     </_Builtin.Block>
                   </_Builtin.Block>
@@ -426,7 +615,7 @@ export function CoachEventTabs({
                     className={_utils.cx(
                       _styles,
                       "events-detail-wrapper",
-                      "skeleton"
+                      "past"
                     )}
                     tag="div"
                   >
@@ -435,10 +624,17 @@ export function CoachEventTabs({
                       tag="div"
                     >
                       <_Builtin.Block
-                        className={_utils.cx(_styles, "icon-embed", "skeleton")}
+                        className={_utils.cx(_styles, "event-image-name-wrap")}
                         tag="div"
-                      />
-                      <_Builtin.Block tag="div">
+                      >
+                        <_Builtin.Block
+                          className={_utils.cx(
+                            _styles,
+                            "icon-embed",
+                            "skeleton"
+                          )}
+                          tag="div"
+                        />
                         <_Builtin.Block
                           className={_utils.cx(
                             _styles,
@@ -449,41 +645,41 @@ export function CoachEventTabs({
                         >
                           {"Name"}
                         </_Builtin.Block>
+                      </_Builtin.Block>
+                      <_Builtin.Block
+                        className={_utils.cx(_styles, "event-date-day-wrap")}
+                        tag="div"
+                      >
                         <_Builtin.Block
-                          className={_utils.cx(
-                            _styles,
-                            "view-details-button",
-                            "skeleton"
-                          )}
+                          className={_utils.cx(_styles, "text-md-skeleton")}
                           tag="div"
                         >
-                          {"View details"}
+                          {"23/253"}
+                        </_Builtin.Block>
+                        <_Builtin.Block
+                          className={_utils.cx(_styles, "text-md-skeleton")}
+                          tag="div"
+                        >
+                          {"Thurs"}
                         </_Builtin.Block>
                       </_Builtin.Block>
                     </_Builtin.Block>
                     <_Builtin.Block
-                      className={_utils.cx(_styles, "event-date-day-wrap")}
+                      className={_utils.cx(
+                        _styles,
+                        "view-details-button",
+                        "skeleton"
+                      )}
                       tag="div"
                     >
-                      <_Builtin.Block
-                        className={_utils.cx(_styles, "text-md-skeleton")}
-                        tag="div"
-                      >
-                        {"Date"}
-                      </_Builtin.Block>
-                      <_Builtin.Block
-                        className={_utils.cx(_styles, "text-md-skeleton")}
-                        tag="div"
-                      >
-                        {"Day"}
-                      </_Builtin.Block>
+                      {"View details"}
                     </_Builtin.Block>
                   </_Builtin.Block>
                   <_Builtin.Block
                     className={_utils.cx(
                       _styles,
                       "events-detail-wrapper",
-                      "skeleton"
+                      "past"
                     )}
                     tag="div"
                   >
@@ -492,10 +688,17 @@ export function CoachEventTabs({
                       tag="div"
                     >
                       <_Builtin.Block
-                        className={_utils.cx(_styles, "icon-embed", "skeleton")}
+                        className={_utils.cx(_styles, "event-image-name-wrap")}
                         tag="div"
-                      />
-                      <_Builtin.Block tag="div">
+                      >
+                        <_Builtin.Block
+                          className={_utils.cx(
+                            _styles,
+                            "icon-embed",
+                            "skeleton"
+                          )}
+                          tag="div"
+                        />
                         <_Builtin.Block
                           className={_utils.cx(
                             _styles,
@@ -506,41 +709,41 @@ export function CoachEventTabs({
                         >
                           {"Name"}
                         </_Builtin.Block>
+                      </_Builtin.Block>
+                      <_Builtin.Block
+                        className={_utils.cx(_styles, "event-date-day-wrap")}
+                        tag="div"
+                      >
                         <_Builtin.Block
-                          className={_utils.cx(
-                            _styles,
-                            "view-details-button",
-                            "skeleton"
-                          )}
+                          className={_utils.cx(_styles, "text-md-skeleton")}
                           tag="div"
                         >
-                          {"View details"}
+                          {"23/253"}
+                        </_Builtin.Block>
+                        <_Builtin.Block
+                          className={_utils.cx(_styles, "text-md-skeleton")}
+                          tag="div"
+                        >
+                          {"Thurs"}
                         </_Builtin.Block>
                       </_Builtin.Block>
                     </_Builtin.Block>
                     <_Builtin.Block
-                      className={_utils.cx(_styles, "event-date-day-wrap")}
+                      className={_utils.cx(
+                        _styles,
+                        "view-details-button",
+                        "skeleton"
+                      )}
                       tag="div"
                     >
-                      <_Builtin.Block
-                        className={_utils.cx(_styles, "text-md-skeleton")}
-                        tag="div"
-                      >
-                        {"Date"}
-                      </_Builtin.Block>
-                      <_Builtin.Block
-                        className={_utils.cx(_styles, "text-md-skeleton")}
-                        tag="div"
-                      >
-                        {"Day"}
-                      </_Builtin.Block>
+                      {"View details"}
                     </_Builtin.Block>
                   </_Builtin.Block>
                   <_Builtin.Block
                     className={_utils.cx(
                       _styles,
                       "events-detail-wrapper",
-                      "skeleton"
+                      "past"
                     )}
                     tag="div"
                   >
@@ -549,10 +752,17 @@ export function CoachEventTabs({
                       tag="div"
                     >
                       <_Builtin.Block
-                        className={_utils.cx(_styles, "icon-embed", "skeleton")}
+                        className={_utils.cx(_styles, "event-image-name-wrap")}
                         tag="div"
-                      />
-                      <_Builtin.Block tag="div">
+                      >
+                        <_Builtin.Block
+                          className={_utils.cx(
+                            _styles,
+                            "icon-embed",
+                            "skeleton"
+                          )}
+                          tag="div"
+                        />
                         <_Builtin.Block
                           className={_utils.cx(
                             _styles,
@@ -563,41 +773,41 @@ export function CoachEventTabs({
                         >
                           {"Name"}
                         </_Builtin.Block>
+                      </_Builtin.Block>
+                      <_Builtin.Block
+                        className={_utils.cx(_styles, "event-date-day-wrap")}
+                        tag="div"
+                      >
                         <_Builtin.Block
-                          className={_utils.cx(
-                            _styles,
-                            "view-details-button",
-                            "skeleton"
-                          )}
+                          className={_utils.cx(_styles, "text-md-skeleton")}
                           tag="div"
                         >
-                          {"View details"}
+                          {"23/253"}
+                        </_Builtin.Block>
+                        <_Builtin.Block
+                          className={_utils.cx(_styles, "text-md-skeleton")}
+                          tag="div"
+                        >
+                          {"Thurs"}
                         </_Builtin.Block>
                       </_Builtin.Block>
                     </_Builtin.Block>
                     <_Builtin.Block
-                      className={_utils.cx(_styles, "event-date-day-wrap")}
+                      className={_utils.cx(
+                        _styles,
+                        "view-details-button",
+                        "skeleton"
+                      )}
                       tag="div"
                     >
-                      <_Builtin.Block
-                        className={_utils.cx(_styles, "text-md-skeleton")}
-                        tag="div"
-                      >
-                        {"Date"}
-                      </_Builtin.Block>
-                      <_Builtin.Block
-                        className={_utils.cx(_styles, "text-md-skeleton")}
-                        tag="div"
-                      >
-                        {"Day"}
-                      </_Builtin.Block>
+                      {"View details"}
                     </_Builtin.Block>
                   </_Builtin.Block>
                   <_Builtin.Block
                     className={_utils.cx(
                       _styles,
                       "events-detail-wrapper",
-                      "skeleton"
+                      "past"
                     )}
                     tag="div"
                   >
@@ -606,10 +816,17 @@ export function CoachEventTabs({
                       tag="div"
                     >
                       <_Builtin.Block
-                        className={_utils.cx(_styles, "icon-embed", "skeleton")}
+                        className={_utils.cx(_styles, "event-image-name-wrap")}
                         tag="div"
-                      />
-                      <_Builtin.Block tag="div">
+                      >
+                        <_Builtin.Block
+                          className={_utils.cx(
+                            _styles,
+                            "icon-embed",
+                            "skeleton"
+                          )}
+                          tag="div"
+                        />
                         <_Builtin.Block
                           className={_utils.cx(
                             _styles,
@@ -620,41 +837,41 @@ export function CoachEventTabs({
                         >
                           {"Name"}
                         </_Builtin.Block>
+                      </_Builtin.Block>
+                      <_Builtin.Block
+                        className={_utils.cx(_styles, "event-date-day-wrap")}
+                        tag="div"
+                      >
                         <_Builtin.Block
-                          className={_utils.cx(
-                            _styles,
-                            "view-details-button",
-                            "skeleton"
-                          )}
+                          className={_utils.cx(_styles, "text-md-skeleton")}
                           tag="div"
                         >
-                          {"View details"}
+                          {"23/253"}
+                        </_Builtin.Block>
+                        <_Builtin.Block
+                          className={_utils.cx(_styles, "text-md-skeleton")}
+                          tag="div"
+                        >
+                          {"Thurs"}
                         </_Builtin.Block>
                       </_Builtin.Block>
                     </_Builtin.Block>
                     <_Builtin.Block
-                      className={_utils.cx(_styles, "event-date-day-wrap")}
+                      className={_utils.cx(
+                        _styles,
+                        "view-details-button",
+                        "skeleton"
+                      )}
                       tag="div"
                     >
-                      <_Builtin.Block
-                        className={_utils.cx(_styles, "text-md-skeleton")}
-                        tag="div"
-                      >
-                        {"Date"}
-                      </_Builtin.Block>
-                      <_Builtin.Block
-                        className={_utils.cx(_styles, "text-md-skeleton")}
-                        tag="div"
-                      >
-                        {"Day"}
-                      </_Builtin.Block>
+                      {"View details"}
                     </_Builtin.Block>
                   </_Builtin.Block>
                   <_Builtin.Block
                     className={_utils.cx(
                       _styles,
                       "events-detail-wrapper",
-                      "skeleton"
+                      "past"
                     )}
                     tag="div"
                   >
@@ -663,10 +880,17 @@ export function CoachEventTabs({
                       tag="div"
                     >
                       <_Builtin.Block
-                        className={_utils.cx(_styles, "icon-embed", "skeleton")}
+                        className={_utils.cx(_styles, "event-image-name-wrap")}
                         tag="div"
-                      />
-                      <_Builtin.Block tag="div">
+                      >
+                        <_Builtin.Block
+                          className={_utils.cx(
+                            _styles,
+                            "icon-embed",
+                            "skeleton"
+                          )}
+                          tag="div"
+                        />
                         <_Builtin.Block
                           className={_utils.cx(
                             _styles,
@@ -677,34 +901,98 @@ export function CoachEventTabs({
                         >
                           {"Name"}
                         </_Builtin.Block>
+                      </_Builtin.Block>
+                      <_Builtin.Block
+                        className={_utils.cx(_styles, "event-date-day-wrap")}
+                        tag="div"
+                      >
                         <_Builtin.Block
-                          className={_utils.cx(
-                            _styles,
-                            "view-details-button",
-                            "skeleton"
-                          )}
+                          className={_utils.cx(_styles, "text-md-skeleton")}
                           tag="div"
                         >
-                          {"View details"}
+                          {"23/253"}
+                        </_Builtin.Block>
+                        <_Builtin.Block
+                          className={_utils.cx(_styles, "text-md-skeleton")}
+                          tag="div"
+                        >
+                          {"Thurs"}
                         </_Builtin.Block>
                       </_Builtin.Block>
                     </_Builtin.Block>
                     <_Builtin.Block
-                      className={_utils.cx(_styles, "event-date-day-wrap")}
+                      className={_utils.cx(
+                        _styles,
+                        "view-details-button",
+                        "skeleton"
+                      )}
+                      tag="div"
+                    >
+                      {"View details"}
+                    </_Builtin.Block>
+                  </_Builtin.Block>
+                  <_Builtin.Block
+                    className={_utils.cx(
+                      _styles,
+                      "events-detail-wrapper",
+                      "past"
+                    )}
+                    tag="div"
+                  >
+                    <_Builtin.Block
+                      className={_utils.cx(_styles, "events-detail-content")}
                       tag="div"
                     >
                       <_Builtin.Block
-                        className={_utils.cx(_styles, "text-md-skeleton")}
+                        className={_utils.cx(_styles, "event-image-name-wrap")}
                         tag="div"
                       >
-                        {"Date"}
+                        <_Builtin.Block
+                          className={_utils.cx(
+                            _styles,
+                            "icon-embed",
+                            "skeleton"
+                          )}
+                          tag="div"
+                        />
+                        <_Builtin.Block
+                          className={_utils.cx(
+                            _styles,
+                            "coach-event-name",
+                            "skeleton"
+                          )}
+                          tag="div"
+                        >
+                          {"Name"}
+                        </_Builtin.Block>
                       </_Builtin.Block>
                       <_Builtin.Block
-                        className={_utils.cx(_styles, "text-md-skeleton")}
+                        className={_utils.cx(_styles, "event-date-day-wrap")}
                         tag="div"
                       >
-                        {"Day"}
+                        <_Builtin.Block
+                          className={_utils.cx(_styles, "text-md-skeleton")}
+                          tag="div"
+                        >
+                          {"23/253"}
+                        </_Builtin.Block>
+                        <_Builtin.Block
+                          className={_utils.cx(_styles, "text-md-skeleton")}
+                          tag="div"
+                        >
+                          {"Thurs"}
+                        </_Builtin.Block>
                       </_Builtin.Block>
+                    </_Builtin.Block>
+                    <_Builtin.Block
+                      className={_utils.cx(
+                        _styles,
+                        "view-details-button",
+                        "skeleton"
+                      )}
+                      tag="div"
+                    >
+                      {"View details"}
                     </_Builtin.Block>
                   </_Builtin.Block>
                 </_Builtin.Block>
