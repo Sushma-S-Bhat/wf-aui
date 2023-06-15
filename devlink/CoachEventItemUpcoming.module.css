@@ -2,7 +2,9 @@
   display: flex;
   padding: 12px 14px;
   justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
+  grid-row-gap: 14px;
 
   border: 1px solid var(--borderGrey-ea561a79);
   border-radius: 8px;
@@ -27,6 +29,13 @@
   }
 }
 
+@media screen and (max-width: 991px) {
+  .events-detail-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
 .events-detail-wrapper.skeleton {
   padding-top: 5px;
   padding-bottom: 10px;
@@ -39,6 +48,7 @@
 }
 
 .events-detail-wrapper.past:hover {
+  border-color: var(--borderGrey-ea561a79);
   background-color: var(--bgGrey100-ce47127d);
 }
 

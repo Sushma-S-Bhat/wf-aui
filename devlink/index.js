@@ -22,7 +22,6 @@ export * from "./CoachJobDescription";
 export * from "./CoachLogin";
 export * from "./CoachMeetingLayout";
 export * from "./CoachNavbar";
-export * from "./CoachSideDashboardLayout";
 export * from "./CoachSkill";
 export * from "./EventPopupContent";
 export * from "./EventQa";

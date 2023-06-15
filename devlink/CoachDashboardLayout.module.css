@@ -135,47 +135,6 @@
   align-items: flex-start;
 }
 
-.job-activity-item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  grid-column-gap: 16px;
-  grid-row-gap: 16px;
-}
-
-.activity-timeline-dot {
-  width: 14px;
-  height: 14px;
-  flex: 0 0 auto;
-  border-radius: 50%;
-  background-color: var(--grey500-0d508ad8);
-}
-
-.text-md-default {
-  letter-spacing: -0.15px;
-}
-
-.text-color-grey {
-  color: var(--textLightGrey-914158a7);
-}
-
-.text-color-dark-grey {
-  color: var(--textDarkGrey-65de823a);
-}
-
-.job-activity-item-separator {
-  height: 24px;
-  margin-left: 5px;
-  border-left: 2px solid var(--grey500-0d508ad8);
-}
-
-.job-activity-content-wrap {
-  display: flex;
-  flex-direction: column;
-  grid-column-gap: 4px;
-  grid-row-gap: 4px;
-}
-
 #w-node-cb3f9983-7aab-61f1-8568-0998478e1782-478e1780 {
   grid-column-start: span 1;
   grid-column-end: span 1;

@@ -5,7 +5,7 @@ import _styles from "./CoachActivityItem.module.css";
 
 export function CoachActivityItem({
   as: _Component = _Builtin.Block,
-  activity = "Activity display here.",
+  textActivity = "This is some default text block.",
 }) {
   return (
     <_Component
@@ -13,20 +13,22 @@ export function CoachActivityItem({
       tag="div"
     >
       <_Builtin.Block
-        className={_utils.cx(_styles, "coach-activity-item")}
+        className={_utils.cx(_styles, "job-activity-item")}
         tag="div"
       >
-        <_Builtin.Image
-          loading="lazy"
-          width="auto"
-          height="auto"
-          src="https://uploads-ssl.webflow.com/6480adc68b3db6d220ed1734/64818140ceb2782715fa1915_timeline-circle.svg"
+        <_Builtin.Block
+          className={_utils.cx(_styles, "activity-timeline-dot")}
+          tag="div"
         />
         <_Builtin.Block
-          className={_utils.cx(_styles, "text-md-default", "text-color-grey")}
+          className={_utils.cx(
+            _styles,
+            "text-md-default",
+            "text-color-dark-grey"
+          )}
           tag="div"
         >
-          {activity}
+          {textActivity}
         </_Builtin.Block>
       </_Builtin.Block>
       <_Builtin.Block

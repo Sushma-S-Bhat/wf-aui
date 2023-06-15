@@ -2,7 +2,7 @@
   display: flex;
   min-height: 100vh;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: stretch;
 }
 
@@ -11,7 +11,7 @@
   width: 100%;
   height: 100%;
   max-width: 1920px;
-  min-height: 90vh;
+  min-height: 100vh;
   padding-right: 40px;
   padding-left: 40px;
   grid-auto-columns: 1fr;
@@ -64,7 +64,9 @@
 }
 
 .slot-coach-event-tab {
-  padding: 39px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 40px;
 }
 
 .meeting-empty-state {

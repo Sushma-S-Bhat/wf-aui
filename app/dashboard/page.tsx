@@ -1,8 +1,18 @@
-import { CoachDashboardLayout } from '@/devlink'
-import React from 'react'
+import { CoachActivityItem, CoachDashboardLayout } from "@/devlink";
+import React from "react";
 
 export default function Dashboard() {
   return (
-    <CoachDashboardLayout/>
-  )
+    <CoachDashboardLayout
+      isActivityLoading={false}
+      isActivityEmpty={false}
+      slotCoachActivityItem={
+        <>
+          <CoachActivityItem />
+          <CoachActivityItem />
+          <CoachActivityItem />
+        </>
+      }
+    />
+  );
 }

@@ -24,11 +24,15 @@ function Test() {
   }
   return (
     <CoachMeetingLayout
+    isCalendlyNotConnected={false}
+    isLoading={false}
+    isCalendlyConnected={true}
       slotCoachEventTabs={
         <CoachEventTabs
           isPastEventsEmpty={false}
           slotEventPopupContent={popupContent}
           isUpcomingEventsEmpty={false}
+          isUpcomingEventsLoading={false}
           isPastEventLoading={false}
           slotCoachEventItemUpcoming={events.map((item) => (
             <CoachEventItemUpcoming
