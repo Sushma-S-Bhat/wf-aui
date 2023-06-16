@@ -175,6 +175,10 @@
   position: relative;
 }
 
+.link-embed-icon.green {
+  color: var(--green400-da388a85);
+}
+
 .profile-settings {
   display: flex;
   align-items: flex-start;

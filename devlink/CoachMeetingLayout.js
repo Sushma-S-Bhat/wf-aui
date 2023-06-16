@@ -10,6 +10,7 @@ export function CoachMeetingLayout({
   isLoading = true,
   slotCalender,
   isCalendlyConnected = true,
+  onClickConnectCalendly = {},
 }) {
   return (
     <_Component className={_utils.cx(_styles, "coach-meeting-page")} tag="div">
@@ -67,6 +68,7 @@ export function CoachMeetingLayout({
             <_Builtin.Block
               className={_utils.cx(_styles, "button", "is-green")}
               tag="div"
+              {...onClickConnectCalendly}
             >
               <_Builtin.Block tag="div">{"Connect Calendly"}</_Builtin.Block>
             </_Builtin.Block>

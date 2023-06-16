@@ -8,4 +8,5 @@ declare function CoachMeetingLayout(props: {
   isLoading?: Types.Visibility.VisibilityConditions;
   slotCalender?: Types.Devlink.Slot;
   isCalendlyConnected?: Types.Visibility.VisibilityConditions;
+  onClickConnectCalendly?: Types.Devlink.RuntimeProps;
 }): React.JSX.Element;

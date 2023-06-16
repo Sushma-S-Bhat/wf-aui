@@ -26,6 +26,7 @@ export function CoachProfileLayout({
   textPopupHeader = "Popup header",
   onClickChangePassword = {},
   onClickCalendlySettings = {},
+  slotPopup,
 }) {
   _interactions.useInteractions(_interactionsData, _styles);
 
@@ -308,7 +309,7 @@ export function CoachProfileLayout({
             className={_utils.cx(_styles, "querypopup-slot")}
             tag="div"
           >
-            <_Builtin.Block tag="div" />
+            <_Builtin.Block tag="div">{slotPopup}</_Builtin.Block>
           </_Builtin.Block>
         </_Builtin.Block>
       </_Builtin.Block>

@@ -19,3 +19,7 @@
 .text-md-bold.color-black {
   color: hsla(0, 0.00%, 0.00%, 1.00);
 }
+
+.text-color-grey {
+  color: var(--textLightGrey-914158a7);
+}

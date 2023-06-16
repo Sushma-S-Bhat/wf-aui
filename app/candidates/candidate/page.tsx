@@ -62,6 +62,8 @@ export default function FloatingNav() {
             isJobEmpty={false}
             isJobLoading={false} //job loading state
             isJobListing={joblist}
+            isPlanLoading={false} //Plan loading state
+            isPlanAdvanced={true} //for Advanced plan candidates
             /*
             isQAEmpty = {false}// for QA Empty state
             slotQA ={} //for QA chat
@@ -69,7 +71,10 @@ export default function FloatingNav() {
             slotProgress ={} //for showing tracker progress
             //to switch to job detail, set isJobListing to false and set isJobDetail to true
             slotSearchJob={} //search input form for jobs
-            slotPlanDetails={} //Plan details
+            isPlanLoading={true} //Plan loading state
+            isPlanUltimate={true} //for Ultimate plan candidates
+            isPlanEssential={true} //for Essential plan candidates
+            isPlanAdvanced={true} //for Advanced plan candidates
             */
             isJobDetail={jobDetail}
             slotJobDetails={slotDetail}

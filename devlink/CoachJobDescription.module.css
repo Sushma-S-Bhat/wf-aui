@@ -272,6 +272,10 @@
   position: relative;
 }
 
+.link-embed-icon.green {
+  color: var(--green400-da388a85);
+}
+
 .already-in-wishlist {
   display: flex;
   padding: 8px 12px;

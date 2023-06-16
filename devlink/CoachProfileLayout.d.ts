@@ -19,4 +19,5 @@ declare function CoachProfileLayout(props: {
   textPopupHeader?: React.ReactNode;
   onClickChangePassword?: Types.Devlink.RuntimeProps;
   onClickCalendlySettings?: Types.Devlink.RuntimeProps;
+  slotPopup?: Types.Devlink.Slot;
 }): React.JSX.Element;

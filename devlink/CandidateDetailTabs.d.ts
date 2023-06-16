@@ -13,7 +13,10 @@ declare function CandidateDetailTabs(props: {
   slotCoachJobCard?: Types.Devlink.Slot;
   isJobListing?: Types.Visibility.VisibilityConditions;
   isJobDetail?: Types.Visibility.VisibilityConditions;
-  slotPlanDetails?: Types.Devlink.Slot;
   slotJobDetails?: Types.Devlink.Slot;
   onClickBack?: Types.Devlink.RuntimeProps;
+  isPlanAdvanced?: Types.Visibility.VisibilityConditions;
+  isPlanUltimate?: Types.Visibility.VisibilityConditions;
+  isPlanEssential?: Types.Visibility.VisibilityConditions;
+  isPlanLoading?: Types.Visibility.VisibilityConditions;
 }): React.JSX.Element;

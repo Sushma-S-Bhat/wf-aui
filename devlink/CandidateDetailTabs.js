@@ -15,9 +15,12 @@ export function CandidateDetailTabs({
   slotCoachJobCard,
   isJobListing = true,
   isJobDetail = true,
-  slotPlanDetails,
   slotJobDetails,
   onClickBack = {},
+  isPlanAdvanced = false,
+  isPlanUltimate = false,
+  isPlanEssential = false,
+  isPlanLoading = true,
 }) {
   return (
     <_Component
@@ -154,7 +157,10 @@ export function CandidateDetailTabs({
         <_Builtin.TabsPane tag="div" data-w-tab="Tab 3">
           <_Builtin.Block tag="div">
             {isJobListing ? (
-              <_Builtin.Block tag="div">
+              <_Builtin.Block
+                className={_utils.cx(_styles, "job-tab-stack")}
+                tag="div"
+              >
                 <_Builtin.Block tag="div">{slotSearchJob}</_Builtin.Block>
                 {isJobEmpty ? (
                   <_Builtin.Block
@@ -547,7 +553,869 @@ export function CandidateDetailTabs({
         </_Builtin.TabsPane>
         <_Builtin.TabsPane tag="div" data-w-tab="Tab 4">
           <_Builtin.Block tag="div">
-            <_Builtin.Block tag="div">{slotPlanDetails}</_Builtin.Block>
+            <_Builtin.Block
+              className={_utils.cx(_styles, "plan-details-card-wrap")}
+              tag="div"
+            >
+              {isPlanAdvanced ? (
+                <_Builtin.Block
+                  className={_utils.cx(
+                    _styles,
+                    "plan-details-card",
+                    "advanced"
+                  )}
+                  tag="div"
+                >
+                  <_Builtin.Block
+                    className={_utils.cx(_styles, "plan-detail-header")}
+                    tag="div"
+                  >
+                    <_Builtin.Block
+                      className={_utils.cx(_styles, "text-xxl-bold")}
+                      tag="div"
+                    >
+                      {"Advanced"}
+                    </_Builtin.Block>
+                    <_Builtin.Block tag="div">
+                      <_Builtin.Block
+                        className={_utils.cx(
+                          _styles,
+                          "text-xxxl-bold",
+                          "text-color-grey"
+                        )}
+                        tag="div"
+                      >
+                        {"$675"}
+                      </_Builtin.Block>
+                    </_Builtin.Block>
+                  </_Builtin.Block>
+                  <_Builtin.Block
+                    className={_utils.cx(
+                      _styles,
+                      "plan-details-list-items-wrap"
+                    )}
+                    tag="div"
+                  >
+                    <_Builtin.Block
+                      className={_utils.cx(_styles, "plan-detail-list-item")}
+                      tag="div"
+                    >
+                      <_Builtin.Block
+                        className={_utils.cx(_styles, "list-item-icon")}
+                        tag="div"
+                      >
+                        <_Builtin.HtmlEmbed
+                          className={_utils.cx(_styles, "link-embed-icon")}
+                          value="%3Csvg%20width%3D%2212%22%20height%3D%2210%22%20viewBox%3D%220%200%2012%2010%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20d%3D%22M11.6211%202.01127L6.16976%209.40906C6.03975%209.58155%205.84589%209.69458%205.63173%209.72273C5.41757%209.75089%205.20108%209.69181%205.03091%209.55879L1.13809%206.44644C0.79457%206.17154%200.738946%205.67021%201.01385%205.3267C1.28875%204.98318%201.79007%204.92756%202.13359%205.20246L5.37973%207.79953L10.3389%201.06913C10.5016%200.8251%2010.7851%200.690183%2011.0771%200.717942C11.369%200.7457%2011.622%200.931643%2011.7358%201.20194C11.8495%201.47225%2011.8054%201.78317%2011.6211%202.01127Z%22%20fill%3D%22currentcolor%22%2F%3E%0A%3C%2Fsvg%3E"
+                        />
+                      </_Builtin.Block>
+                      <_Builtin.Block
+                        className={_utils.cx(_styles, "text-md-bold")}
+                        tag="div"
+                      >
+                        {"Job Search Strategy Session (30-min call)"}
+                      </_Builtin.Block>
+                    </_Builtin.Block>
+                    <_Builtin.Block
+                      className={_utils.cx(_styles, "plan-detail-list-item")}
+                      tag="div"
+                    >
+                      <_Builtin.Block
+                        className={_utils.cx(_styles, "list-item-icon")}
+                        tag="div"
+                      >
+                        <_Builtin.HtmlEmbed
+                          className={_utils.cx(_styles, "link-embed-icon")}
+                          value="%3Csvg%20width%3D%2212%22%20height%3D%2210%22%20viewBox%3D%220%200%2012%2010%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20d%3D%22M11.6211%202.01127L6.16976%209.40906C6.03975%209.58155%205.84589%209.69458%205.63173%209.72273C5.41757%209.75089%205.20108%209.69181%205.03091%209.55879L1.13809%206.44644C0.79457%206.17154%200.738946%205.67021%201.01385%205.3267C1.28875%204.98318%201.79007%204.92756%202.13359%205.20246L5.37973%207.79953L10.3389%201.06913C10.5016%200.8251%2010.7851%200.690183%2011.0771%200.717942C11.369%200.7457%2011.622%200.931643%2011.7358%201.20194C11.8495%201.47225%2011.8054%201.78317%2011.6211%202.01127Z%22%20fill%3D%22currentcolor%22%2F%3E%0A%3C%2Fsvg%3E"
+                        />
+                      </_Builtin.Block>
+                      <_Builtin.Block
+                        className={_utils.cx(_styles, "text-md-bold")}
+                        tag="div"
+                      >
+                        {"Resume Review and feedback (One review)"}
+                      </_Builtin.Block>
+                    </_Builtin.Block>
+                    <_Builtin.Block
+                      className={_utils.cx(_styles, "plan-detail-list-item")}
+                      tag="div"
+                    >
+                      <_Builtin.Block
+                        className={_utils.cx(_styles, "list-item-icon")}
+                        tag="div"
+                      >
+                        <_Builtin.HtmlEmbed
+                          className={_utils.cx(_styles, "link-embed-icon")}
+                          value="%3Csvg%20width%3D%2212%22%20height%3D%2210%22%20viewBox%3D%220%200%2012%2010%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20d%3D%22M11.6211%202.01127L6.16976%209.40906C6.03975%209.58155%205.84589%209.69458%205.63173%209.72273C5.41757%209.75089%205.20108%209.69181%205.03091%209.55879L1.13809%206.44644C0.79457%206.17154%200.738946%205.67021%201.01385%205.3267C1.28875%204.98318%201.79007%204.92756%202.13359%205.20246L5.37973%207.79953L10.3389%201.06913C10.5016%200.8251%2010.7851%200.690183%2011.0771%200.717942C11.369%200.7457%2011.622%200.931643%2011.7358%201.20194C11.8495%201.47225%2011.8054%201.78317%2011.6211%202.01127Z%22%20fill%3D%22currentcolor%22%2F%3E%0A%3C%2Fsvg%3E"
+                        />
+                      </_Builtin.Block>
+                      <_Builtin.Block
+                        className={_utils.cx(_styles, "text-md-bold")}
+                        tag="div"
+                      >
+                        {"LinkedIn Profile Review and feedback (One review)"}
+                      </_Builtin.Block>
+                    </_Builtin.Block>
+                    <_Builtin.Block
+                      className={_utils.cx(_styles, "plan-detail-list-item")}
+                      tag="div"
+                    >
+                      <_Builtin.Block
+                        className={_utils.cx(_styles, "list-item-icon")}
+                        tag="div"
+                      >
+                        <_Builtin.HtmlEmbed
+                          className={_utils.cx(_styles, "link-embed-icon")}
+                          value="%3Csvg%20width%3D%2212%22%20height%3D%2210%22%20viewBox%3D%220%200%2012%2010%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20d%3D%22M11.6211%202.01127L6.16976%209.40906C6.03975%209.58155%205.84589%209.69458%205.63173%209.72273C5.41757%209.75089%205.20108%209.69181%205.03091%209.55879L1.13809%206.44644C0.79457%206.17154%200.738946%205.67021%201.01385%205.3267C1.28875%204.98318%201.79007%204.92756%202.13359%205.20246L5.37973%207.79953L10.3389%201.06913C10.5016%200.8251%2010.7851%200.690183%2011.0771%200.717942C11.369%200.7457%2011.622%200.931643%2011.7358%201.20194C11.8495%201.47225%2011.8054%201.78317%2011.6211%202.01127Z%22%20fill%3D%22currentcolor%22%2F%3E%0A%3C%2Fsvg%3E"
+                        />
+                      </_Builtin.Block>
+                      <_Builtin.Block
+                        className={_utils.cx(_styles, "text-md-bold")}
+                        tag="div"
+                      >
+                        {"Interview Prep Session (30-min call)"}
+                      </_Builtin.Block>
+                    </_Builtin.Block>
+                    <_Builtin.Block
+                      className={_utils.cx(_styles, "plan-detail-list-item")}
+                      tag="div"
+                    >
+                      <_Builtin.Block
+                        className={_utils.cx(_styles, "list-item-icon")}
+                        tag="div"
+                      >
+                        <_Builtin.HtmlEmbed
+                          className={_utils.cx(_styles, "link-embed-icon")}
+                          value="%3Csvg%20width%3D%2212%22%20height%3D%2210%22%20viewBox%3D%220%200%2012%2010%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20d%3D%22M11.6211%202.01127L6.16976%209.40906C6.03975%209.58155%205.84589%209.69458%205.63173%209.72273C5.41757%209.75089%205.20108%209.69181%205.03091%209.55879L1.13809%206.44644C0.79457%206.17154%200.738946%205.67021%201.01385%205.3267C1.28875%204.98318%201.79007%204.92756%202.13359%205.20246L5.37973%207.79953L10.3389%201.06913C10.5016%200.8251%2010.7851%200.690183%2011.0771%200.717942C11.369%200.7457%2011.622%200.931643%2011.7358%201.20194C11.8495%201.47225%2011.8054%201.78317%2011.6211%202.01127Z%22%20fill%3D%22currentcolor%22%2F%3E%0A%3C%2Fsvg%3E"
+                        />
+                      </_Builtin.Block>
+                      <_Builtin.Block
+                        className={_utils.cx(_styles, "text-md-bold")}
+                        tag="div"
+                      >
+                        {"Mock Interview Practice Session (30-min call)"}
+                      </_Builtin.Block>
+                    </_Builtin.Block>
+                    <_Builtin.Block
+                      className={_utils.cx(_styles, "plan-detail-list-item")}
+                      tag="div"
+                    >
+                      <_Builtin.Block
+                        className={_utils.cx(_styles, "list-item-icon")}
+                        tag="div"
+                      >
+                        <_Builtin.HtmlEmbed
+                          className={_utils.cx(_styles, "link-embed-icon")}
+                          value="%3Csvg%20width%3D%2212%22%20height%3D%2210%22%20viewBox%3D%220%200%2012%2010%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20d%3D%22M11.6211%202.01127L6.16976%209.40906C6.03975%209.58155%205.84589%209.69458%205.63173%209.72273C5.41757%209.75089%205.20108%209.69181%205.03091%209.55879L1.13809%206.44644C0.79457%206.17154%200.738946%205.67021%201.01385%205.3267C1.28875%204.98318%201.79007%204.92756%202.13359%205.20246L5.37973%207.79953L10.3389%201.06913C10.5016%200.8251%2010.7851%200.690183%2011.0771%200.717942C11.369%200.7457%2011.622%200.931643%2011.7358%201.20194C11.8495%201.47225%2011.8054%201.78317%2011.6211%202.01127Z%22%20fill%3D%22currentcolor%22%2F%3E%0A%3C%2Fsvg%3E"
+                        />
+                      </_Builtin.Block>
+                      <_Builtin.Block
+                        className={_utils.cx(_styles, "text-md-bold")}
+                        tag="div"
+                      >
+                        {"Networking Guidance and Tips (30-min call)"}
+                      </_Builtin.Block>
+                    </_Builtin.Block>
+                    <_Builtin.Block
+                      className={_utils.cx(_styles, "plan-detail-list-item")}
+                      tag="div"
+                    >
+                      <_Builtin.Block
+                        className={_utils.cx(_styles, "list-item-icon")}
+                        tag="div"
+                      >
+                        <_Builtin.HtmlEmbed
+                          className={_utils.cx(_styles, "link-embed-icon")}
+                          value="%3Csvg%20width%3D%2212%22%20height%3D%2210%22%20viewBox%3D%220%200%2012%2010%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20d%3D%22M11.6211%202.01127L6.16976%209.40906C6.03975%209.58155%205.84589%209.69458%205.63173%209.72273C5.41757%209.75089%205.20108%209.69181%205.03091%209.55879L1.13809%206.44644C0.79457%206.17154%200.738946%205.67021%201.01385%205.3267C1.28875%204.98318%201.79007%204.92756%202.13359%205.20246L5.37973%207.79953L10.3389%201.06913C10.5016%200.8251%2010.7851%200.690183%2011.0771%200.717942C11.369%200.7457%2011.622%200.931643%2011.7358%201.20194C11.8495%201.47225%2011.8054%201.78317%2011.6211%202.01127Z%22%20fill%3D%22currentcolor%22%2F%3E%0A%3C%2Fsvg%3E"
+                        />
+                      </_Builtin.Block>
+                      <_Builtin.Block
+                        className={_utils.cx(_styles, "text-md-bold")}
+                        tag="div"
+                      >
+                        {
+                          "Ongoing Personal Messaging Support in Aglint (30 days)"
+                        }
+                      </_Builtin.Block>
+                    </_Builtin.Block>
+                  </_Builtin.Block>
+                </_Builtin.Block>
+              ) : null}
+              {isPlanUltimate ? (
+                <_Builtin.Block
+                  className={_utils.cx(
+                    _styles,
+                    "plan-details-card",
+                    "ultimate"
+                  )}
+                  tag="div"
+                >
+                  <_Builtin.Block
+                    className={_utils.cx(_styles, "plan-detail-header")}
+                    tag="div"
+                  >
+                    <_Builtin.Block
+                      className={_utils.cx(_styles, "text-xxl-bold")}
+                      tag="div"
+                    >
+                      {"Ultimate"}
+                    </_Builtin.Block>
+                    <_Builtin.Block tag="div">
+                      <_Builtin.Block
+                        className={_utils.cx(
+                          _styles,
+                          "text-xxxl-bold",
+                          "text-color-dark-grey"
+                        )}
+                        tag="div"
+                      >
+                        {"$1295"}
+                      </_Builtin.Block>
+                    </_Builtin.Block>
+                  </_Builtin.Block>
+                  <_Builtin.Block
+                    className={_utils.cx(
+                      _styles,
+                      "plan-details-list-items-wrap"
+                    )}
+                    tag="div"
+                  >
+                    <_Builtin.Block
+                      className={_utils.cx(_styles, "plan-detail-list-item")}
+                      tag="div"
+                    >
+                      <_Builtin.Block
+                        className={_utils.cx(
+                          _styles,
+                          "list-item-icon",
+                          "ultimate"
+                        )}
+                        tag="div"
+                      >
+                        <_Builtin.HtmlEmbed
+                          className={_utils.cx(_styles, "link-embed-icon")}
+                          value="%3Csvg%20width%3D%2212%22%20height%3D%2210%22%20viewBox%3D%220%200%2012%2010%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20d%3D%22M11.6211%202.01127L6.16976%209.40906C6.03975%209.58155%205.84589%209.69458%205.63173%209.72273C5.41757%209.75089%205.20108%209.69181%205.03091%209.55879L1.13809%206.44644C0.79457%206.17154%200.738946%205.67021%201.01385%205.3267C1.28875%204.98318%201.79007%204.92756%202.13359%205.20246L5.37973%207.79953L10.3389%201.06913C10.5016%200.8251%2010.7851%200.690183%2011.0771%200.717942C11.369%200.7457%2011.622%200.931643%2011.7358%201.20194C11.8495%201.47225%2011.8054%201.78317%2011.6211%202.01127Z%22%20fill%3D%22currentcolor%22%2F%3E%0A%3C%2Fsvg%3E"
+                        />
+                      </_Builtin.Block>
+                      <_Builtin.Block
+                        className={_utils.cx(_styles, "text-md-bold")}
+                        tag="div"
+                      >
+                        {"Job Search Strategy Session (30-min call)"}
+                      </_Builtin.Block>
+                    </_Builtin.Block>
+                    <_Builtin.Block
+                      className={_utils.cx(_styles, "plan-detail-list-item")}
+                      tag="div"
+                    >
+                      <_Builtin.Block
+                        className={_utils.cx(
+                          _styles,
+                          "list-item-icon",
+                          "ultimate"
+                        )}
+                        tag="div"
+                      >
+                        <_Builtin.HtmlEmbed
+                          className={_utils.cx(_styles, "link-embed-icon")}
+                          value="%3Csvg%20width%3D%2212%22%20height%3D%2210%22%20viewBox%3D%220%200%2012%2010%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20d%3D%22M11.6211%202.01127L6.16976%209.40906C6.03975%209.58155%205.84589%209.69458%205.63173%209.72273C5.41757%209.75089%205.20108%209.69181%205.03091%209.55879L1.13809%206.44644C0.79457%206.17154%200.738946%205.67021%201.01385%205.3267C1.28875%204.98318%201.79007%204.92756%202.13359%205.20246L5.37973%207.79953L10.3389%201.06913C10.5016%200.8251%2010.7851%200.690183%2011.0771%200.717942C11.369%200.7457%2011.622%200.931643%2011.7358%201.20194C11.8495%201.47225%2011.8054%201.78317%2011.6211%202.01127Z%22%20fill%3D%22currentcolor%22%2F%3E%0A%3C%2Fsvg%3E"
+                        />
+                      </_Builtin.Block>
+                      <_Builtin.Block
+                        className={_utils.cx(_styles, "text-md-bold")}
+                        tag="div"
+                      >
+                        {"Resume Review and feedback (One review)"}
+                      </_Builtin.Block>
+                    </_Builtin.Block>
+                    <_Builtin.Block
+                      className={_utils.cx(_styles, "plan-detail-list-item")}
+                      tag="div"
+                    >
+                      <_Builtin.Block
+                        className={_utils.cx(
+                          _styles,
+                          "list-item-icon",
+                          "ultimate"
+                        )}
+                        tag="div"
+                      >
+                        <_Builtin.HtmlEmbed
+                          className={_utils.cx(_styles, "link-embed-icon")}
+                          value="%3Csvg%20width%3D%2212%22%20height%3D%2210%22%20viewBox%3D%220%200%2012%2010%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20d%3D%22M11.6211%202.01127L6.16976%209.40906C6.03975%209.58155%205.84589%209.69458%205.63173%209.72273C5.41757%209.75089%205.20108%209.69181%205.03091%209.55879L1.13809%206.44644C0.79457%206.17154%200.738946%205.67021%201.01385%205.3267C1.28875%204.98318%201.79007%204.92756%202.13359%205.20246L5.37973%207.79953L10.3389%201.06913C10.5016%200.8251%2010.7851%200.690183%2011.0771%200.717942C11.369%200.7457%2011.622%200.931643%2011.7358%201.20194C11.8495%201.47225%2011.8054%201.78317%2011.6211%202.01127Z%22%20fill%3D%22currentcolor%22%2F%3E%0A%3C%2Fsvg%3E"
+                        />
+                      </_Builtin.Block>
+                      <_Builtin.Block
+                        className={_utils.cx(_styles, "text-md-bold")}
+                        tag="div"
+                      >
+                        {"LinkedIn Profile Review and feedback (One review)"}
+                      </_Builtin.Block>
+                    </_Builtin.Block>
+                    <_Builtin.Block
+                      className={_utils.cx(_styles, "plan-detail-list-item")}
+                      tag="div"
+                    >
+                      <_Builtin.Block
+                        className={_utils.cx(
+                          _styles,
+                          "list-item-icon",
+                          "ultimate"
+                        )}
+                        tag="div"
+                      >
+                        <_Builtin.HtmlEmbed
+                          className={_utils.cx(_styles, "link-embed-icon")}
+                          value="%3Csvg%20width%3D%2212%22%20height%3D%2210%22%20viewBox%3D%220%200%2012%2010%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20d%3D%22M11.6211%202.01127L6.16976%209.40906C6.03975%209.58155%205.84589%209.69458%205.63173%209.72273C5.41757%209.75089%205.20108%209.69181%205.03091%209.55879L1.13809%206.44644C0.79457%206.17154%200.738946%205.67021%201.01385%205.3267C1.28875%204.98318%201.79007%204.92756%202.13359%205.20246L5.37973%207.79953L10.3389%201.06913C10.5016%200.8251%2010.7851%200.690183%2011.0771%200.717942C11.369%200.7457%2011.622%200.931643%2011.7358%201.20194C11.8495%201.47225%2011.8054%201.78317%2011.6211%202.01127Z%22%20fill%3D%22currentcolor%22%2F%3E%0A%3C%2Fsvg%3E"
+                        />
+                      </_Builtin.Block>
+                      <_Builtin.Block
+                        className={_utils.cx(_styles, "text-md-bold")}
+                        tag="div"
+                      >
+                        {"Mock Interview Practice Session (30-min call)"}
+                      </_Builtin.Block>
+                    </_Builtin.Block>
+                    <_Builtin.Block
+                      className={_utils.cx(_styles, "plan-detail-list-item")}
+                      tag="div"
+                    >
+                      <_Builtin.Block
+                        className={_utils.cx(
+                          _styles,
+                          "list-item-icon",
+                          "ultimate"
+                        )}
+                        tag="div"
+                      >
+                        <_Builtin.HtmlEmbed
+                          className={_utils.cx(_styles, "link-embed-icon")}
+                          value="%3Csvg%20width%3D%2212%22%20height%3D%2210%22%20viewBox%3D%220%200%2012%2010%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20d%3D%22M11.6211%202.01127L6.16976%209.40906C6.03975%209.58155%205.84589%209.69458%205.63173%209.72273C5.41757%209.75089%205.20108%209.69181%205.03091%209.55879L1.13809%206.44644C0.79457%206.17154%200.738946%205.67021%201.01385%205.3267C1.28875%204.98318%201.79007%204.92756%202.13359%205.20246L5.37973%207.79953L10.3389%201.06913C10.5016%200.8251%2010.7851%200.690183%2011.0771%200.717942C11.369%200.7457%2011.622%200.931643%2011.7358%201.20194C11.8495%201.47225%2011.8054%201.78317%2011.6211%202.01127Z%22%20fill%3D%22currentcolor%22%2F%3E%0A%3C%2Fsvg%3E"
+                        />
+                      </_Builtin.Block>
+                      <_Builtin.Block
+                        className={_utils.cx(_styles, "text-md-bold")}
+                        tag="div"
+                      >
+                        {"Networking Guidance and Tips (30-min call)"}
+                      </_Builtin.Block>
+                    </_Builtin.Block>
+                    <_Builtin.Block
+                      className={_utils.cx(_styles, "plan-detail-list-item")}
+                      tag="div"
+                    >
+                      <_Builtin.Block
+                        className={_utils.cx(
+                          _styles,
+                          "list-item-icon",
+                          "ultimate"
+                        )}
+                        tag="div"
+                      >
+                        <_Builtin.HtmlEmbed
+                          className={_utils.cx(_styles, "link-embed-icon")}
+                          value="%3Csvg%20width%3D%2212%22%20height%3D%2210%22%20viewBox%3D%220%200%2012%2010%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20d%3D%22M11.6211%202.01127L6.16976%209.40906C6.03975%209.58155%205.84589%209.69458%205.63173%209.72273C5.41757%209.75089%205.20108%209.69181%205.03091%209.55879L1.13809%206.44644C0.79457%206.17154%200.738946%205.67021%201.01385%205.3267C1.28875%204.98318%201.79007%204.92756%202.13359%205.20246L5.37973%207.79953L10.3389%201.06913C10.5016%200.8251%2010.7851%200.690183%2011.0771%200.717942C11.369%200.7457%2011.622%200.931643%2011.7358%201.20194C11.8495%201.47225%2011.8054%201.78317%2011.6211%202.01127Z%22%20fill%3D%22currentcolor%22%2F%3E%0A%3C%2Fsvg%3E"
+                        />
+                      </_Builtin.Block>
+                      <_Builtin.Block
+                        className={_utils.cx(_styles, "text-md-bold")}
+                        tag="div"
+                      >
+                        {
+                          "Advanced Interview Techniques and Strategies (two 30-min calls)"
+                        }
+                      </_Builtin.Block>
+                    </_Builtin.Block>
+                    <_Builtin.Block
+                      className={_utils.cx(_styles, "plan-detail-list-item")}
+                      tag="div"
+                    >
+                      <_Builtin.Block
+                        className={_utils.cx(
+                          _styles,
+                          "list-item-icon",
+                          "ultimate"
+                        )}
+                        tag="div"
+                      >
+                        <_Builtin.HtmlEmbed
+                          className={_utils.cx(_styles, "link-embed-icon")}
+                          value="%3Csvg%20width%3D%2212%22%20height%3D%2210%22%20viewBox%3D%220%200%2012%2010%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20d%3D%22M11.6211%202.01127L6.16976%209.40906C6.03975%209.58155%205.84589%209.69458%205.63173%209.72273C5.41757%209.75089%205.20108%209.69181%205.03091%209.55879L1.13809%206.44644C0.79457%206.17154%200.738946%205.67021%201.01385%205.3267C1.28875%204.98318%201.79007%204.92756%202.13359%205.20246L5.37973%207.79953L10.3389%201.06913C10.5016%200.8251%2010.7851%200.690183%2011.0771%200.717942C11.369%200.7457%2011.622%200.931643%2011.7358%201.20194C11.8495%201.47225%2011.8054%201.78317%2011.6211%202.01127Z%22%20fill%3D%22currentcolor%22%2F%3E%0A%3C%2Fsvg%3E"
+                        />
+                      </_Builtin.Block>
+                      <_Builtin.Block
+                        className={_utils.cx(_styles, "text-md-bold")}
+                        tag="div"
+                      >
+                        {
+                          "Customized Cover Letter Review and Feedback (3 cover letters)"
+                        }
+                      </_Builtin.Block>
+                    </_Builtin.Block>
+                    <_Builtin.Block
+                      className={_utils.cx(_styles, "plan-detail-list-item")}
+                      tag="div"
+                    >
+                      <_Builtin.Block
+                        className={_utils.cx(
+                          _styles,
+                          "list-item-icon",
+                          "ultimate"
+                        )}
+                        tag="div"
+                      >
+                        <_Builtin.HtmlEmbed
+                          className={_utils.cx(_styles, "link-embed-icon")}
+                          value="%3Csvg%20width%3D%2212%22%20height%3D%2210%22%20viewBox%3D%220%200%2012%2010%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20d%3D%22M11.6211%202.01127L6.16976%209.40906C6.03975%209.58155%205.84589%209.69458%205.63173%209.72273C5.41757%209.75089%205.20108%209.69181%205.03091%209.55879L1.13809%206.44644C0.79457%206.17154%200.738946%205.67021%201.01385%205.3267C1.28875%204.98318%201.79007%204.92756%202.13359%205.20246L5.37973%207.79953L10.3389%201.06913C10.5016%200.8251%2010.7851%200.690183%2011.0771%200.717942C11.369%200.7457%2011.622%200.931643%2011.7358%201.20194C11.8495%201.47225%2011.8054%201.78317%2011.6211%202.01127Z%22%20fill%3D%22currentcolor%22%2F%3E%0A%3C%2Fsvg%3E"
+                        />
+                      </_Builtin.Block>
+                      <_Builtin.Block
+                        className={_utils.cx(_styles, "text-md-bold")}
+                        tag="div"
+                      >
+                        {"Targeted Job Search Support"}
+                      </_Builtin.Block>
+                    </_Builtin.Block>
+                    <_Builtin.Block
+                      className={_utils.cx(_styles, "plan-detail-list-item")}
+                      tag="div"
+                    >
+                      <_Builtin.Block
+                        className={_utils.cx(
+                          _styles,
+                          "list-item-icon",
+                          "ultimate"
+                        )}
+                        tag="div"
+                      >
+                        <_Builtin.HtmlEmbed
+                          className={_utils.cx(_styles, "link-embed-icon")}
+                          value="%3Csvg%20width%3D%2212%22%20height%3D%2210%22%20viewBox%3D%220%200%2012%2010%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20d%3D%22M11.6211%202.01127L6.16976%209.40906C6.03975%209.58155%205.84589%209.69458%205.63173%209.72273C5.41757%209.75089%205.20108%209.69181%205.03091%209.55879L1.13809%206.44644C0.79457%206.17154%200.738946%205.67021%201.01385%205.3267C1.28875%204.98318%201.79007%204.92756%202.13359%205.20246L5.37973%207.79953L10.3389%201.06913C10.5016%200.8251%2010.7851%200.690183%2011.0771%200.717942C11.369%200.7457%2011.622%200.931643%2011.7358%201.20194C11.8495%201.47225%2011.8054%201.78317%2011.6211%202.01127Z%22%20fill%3D%22currentcolor%22%2F%3E%0A%3C%2Fsvg%3E"
+                        />
+                      </_Builtin.Block>
+                      <_Builtin.Block
+                        className={_utils.cx(_styles, "text-md-bold")}
+                        tag="div"
+                      >
+                        {"LinkedIn Networking and Profile Optimization"}
+                      </_Builtin.Block>
+                    </_Builtin.Block>
+                    <_Builtin.Block
+                      className={_utils.cx(_styles, "plan-detail-list-item")}
+                      tag="div"
+                    >
+                      <_Builtin.Block
+                        className={_utils.cx(
+                          _styles,
+                          "list-item-icon",
+                          "ultimate"
+                        )}
+                        tag="div"
+                      >
+                        <_Builtin.HtmlEmbed
+                          className={_utils.cx(_styles, "link-embed-icon")}
+                          value="%3Csvg%20width%3D%2212%22%20height%3D%2210%22%20viewBox%3D%220%200%2012%2010%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20d%3D%22M11.6211%202.01127L6.16976%209.40906C6.03975%209.58155%205.84589%209.69458%205.63173%209.72273C5.41757%209.75089%205.20108%209.69181%205.03091%209.55879L1.13809%206.44644C0.79457%206.17154%200.738946%205.67021%201.01385%205.3267C1.28875%204.98318%201.79007%204.92756%202.13359%205.20246L5.37973%207.79953L10.3389%201.06913C10.5016%200.8251%2010.7851%200.690183%2011.0771%200.717942C11.369%200.7457%2011.622%200.931643%2011.7358%201.20194C11.8495%201.47225%2011.8054%201.78317%2011.6211%202.01127Z%22%20fill%3D%22currentcolor%22%2F%3E%0A%3C%2Fsvg%3E"
+                        />
+                      </_Builtin.Block>
+                      <_Builtin.Block
+                        className={_utils.cx(_styles, "text-md-bold")}
+                        tag="div"
+                      >
+                        {
+                          "Ongoing Personal Messaging Support in Aglint (60 days)"
+                        }
+                      </_Builtin.Block>
+                    </_Builtin.Block>
+                  </_Builtin.Block>
+                </_Builtin.Block>
+              ) : null}
+              {isPlanEssential ? (
+                <_Builtin.Block
+                  className={_utils.cx(
+                    _styles,
+                    "plan-details-card",
+                    "essential"
+                  )}
+                  tag="div"
+                >
+                  <_Builtin.Block
+                    className={_utils.cx(_styles, "plan-detail-header")}
+                    tag="div"
+                  >
+                    <_Builtin.Block
+                      className={_utils.cx(_styles, "text-xxl-bold")}
+                      tag="div"
+                    >
+                      {"Essential"}
+                    </_Builtin.Block>
+                    <_Builtin.Block tag="div">
+                      <_Builtin.Block
+                        className={_utils.cx(
+                          _styles,
+                          "text-xxxl-bold",
+                          "text-color-dark-grey"
+                        )}
+                        tag="div"
+                      >
+                        {"$345"}
+                      </_Builtin.Block>
+                    </_Builtin.Block>
+                  </_Builtin.Block>
+                  <_Builtin.Block
+                    className={_utils.cx(
+                      _styles,
+                      "plan-details-list-items-wrap"
+                    )}
+                    tag="div"
+                  >
+                    <_Builtin.Block
+                      className={_utils.cx(_styles, "plan-detail-list-item")}
+                      tag="div"
+                    >
+                      <_Builtin.Block
+                        className={_utils.cx(_styles, "list-item-icon")}
+                        tag="div"
+                      >
+                        <_Builtin.HtmlEmbed
+                          className={_utils.cx(_styles, "link-embed-icon")}
+                          value="%3Csvg%20width%3D%2212%22%20height%3D%2210%22%20viewBox%3D%220%200%2012%2010%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20d%3D%22M11.6211%202.01127L6.16976%209.40906C6.03975%209.58155%205.84589%209.69458%205.63173%209.72273C5.41757%209.75089%205.20108%209.69181%205.03091%209.55879L1.13809%206.44644C0.79457%206.17154%200.738946%205.67021%201.01385%205.3267C1.28875%204.98318%201.79007%204.92756%202.13359%205.20246L5.37973%207.79953L10.3389%201.06913C10.5016%200.8251%2010.7851%200.690183%2011.0771%200.717942C11.369%200.7457%2011.622%200.931643%2011.7358%201.20194C11.8495%201.47225%2011.8054%201.78317%2011.6211%202.01127Z%22%20fill%3D%22currentcolor%22%2F%3E%0A%3C%2Fsvg%3E"
+                        />
+                      </_Builtin.Block>
+                      <_Builtin.Block
+                        className={_utils.cx(_styles, "text-md-bold")}
+                        tag="div"
+                      >
+                        {"Job Search Strategy Session (30-min call)"}
+                      </_Builtin.Block>
+                    </_Builtin.Block>
+                    <_Builtin.Block
+                      className={_utils.cx(_styles, "plan-detail-list-item")}
+                      tag="div"
+                    >
+                      <_Builtin.Block
+                        className={_utils.cx(_styles, "list-item-icon")}
+                        tag="div"
+                      >
+                        <_Builtin.HtmlEmbed
+                          className={_utils.cx(_styles, "link-embed-icon")}
+                          value="%3Csvg%20width%3D%2212%22%20height%3D%2210%22%20viewBox%3D%220%200%2012%2010%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20d%3D%22M11.6211%202.01127L6.16976%209.40906C6.03975%209.58155%205.84589%209.69458%205.63173%209.72273C5.41757%209.75089%205.20108%209.69181%205.03091%209.55879L1.13809%206.44644C0.79457%206.17154%200.738946%205.67021%201.01385%205.3267C1.28875%204.98318%201.79007%204.92756%202.13359%205.20246L5.37973%207.79953L10.3389%201.06913C10.5016%200.8251%2010.7851%200.690183%2011.0771%200.717942C11.369%200.7457%2011.622%200.931643%2011.7358%201.20194C11.8495%201.47225%2011.8054%201.78317%2011.6211%202.01127Z%22%20fill%3D%22currentcolor%22%2F%3E%0A%3C%2Fsvg%3E"
+                        />
+                      </_Builtin.Block>
+                      <_Builtin.Block
+                        className={_utils.cx(_styles, "text-md-bold")}
+                        tag="div"
+                      >
+                        {"Resume Review and feedback (One review)"}
+                      </_Builtin.Block>
+                    </_Builtin.Block>
+                    <_Builtin.Block
+                      className={_utils.cx(_styles, "plan-detail-list-item")}
+                      tag="div"
+                    >
+                      <_Builtin.Block
+                        className={_utils.cx(_styles, "list-item-icon")}
+                        tag="div"
+                      >
+                        <_Builtin.HtmlEmbed
+                          className={_utils.cx(_styles, "link-embed-icon")}
+                          value="%3Csvg%20width%3D%2212%22%20height%3D%2210%22%20viewBox%3D%220%200%2012%2010%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20d%3D%22M11.6211%202.01127L6.16976%209.40906C6.03975%209.58155%205.84589%209.69458%205.63173%209.72273C5.41757%209.75089%205.20108%209.69181%205.03091%209.55879L1.13809%206.44644C0.79457%206.17154%200.738946%205.67021%201.01385%205.3267C1.28875%204.98318%201.79007%204.92756%202.13359%205.20246L5.37973%207.79953L10.3389%201.06913C10.5016%200.8251%2010.7851%200.690183%2011.0771%200.717942C11.369%200.7457%2011.622%200.931643%2011.7358%201.20194C11.8495%201.47225%2011.8054%201.78317%2011.6211%202.01127Z%22%20fill%3D%22currentcolor%22%2F%3E%0A%3C%2Fsvg%3E"
+                        />
+                      </_Builtin.Block>
+                      <_Builtin.Block
+                        className={_utils.cx(_styles, "text-md-bold")}
+                        tag="div"
+                      >
+                        {"LinkedIn Profile Review and feedback (One review)"}
+                      </_Builtin.Block>
+                    </_Builtin.Block>
+                    <_Builtin.Block
+                      className={_utils.cx(_styles, "plan-detail-list-item")}
+                      tag="div"
+                    >
+                      <_Builtin.Block
+                        className={_utils.cx(_styles, "list-item-icon")}
+                        tag="div"
+                      >
+                        <_Builtin.HtmlEmbed
+                          className={_utils.cx(_styles, "link-embed-icon")}
+                          value="%3Csvg%20width%3D%2212%22%20height%3D%2210%22%20viewBox%3D%220%200%2012%2010%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20d%3D%22M11.6211%202.01127L6.16976%209.40906C6.03975%209.58155%205.84589%209.69458%205.63173%209.72273C5.41757%209.75089%205.20108%209.69181%205.03091%209.55879L1.13809%206.44644C0.79457%206.17154%200.738946%205.67021%201.01385%205.3267C1.28875%204.98318%201.79007%204.92756%202.13359%205.20246L5.37973%207.79953L10.3389%201.06913C10.5016%200.8251%2010.7851%200.690183%2011.0771%200.717942C11.369%200.7457%2011.622%200.931643%2011.7358%201.20194C11.8495%201.47225%2011.8054%201.78317%2011.6211%202.01127Z%22%20fill%3D%22currentcolor%22%2F%3E%0A%3C%2Fsvg%3E"
+                        />
+                      </_Builtin.Block>
+                      <_Builtin.Block
+                        className={_utils.cx(_styles, "text-md-bold")}
+                        tag="div"
+                      >
+                        {"Interview Prep Session (30-min call)"}
+                      </_Builtin.Block>
+                    </_Builtin.Block>
+                  </_Builtin.Block>
+                </_Builtin.Block>
+              ) : null}
+              {isPlanLoading ? (
+                <_Builtin.Block tag="div">
+                  <_Builtin.Block
+                    className={_utils.cx(
+                      _styles,
+                      "plan-details-card",
+                      "skeleton"
+                    )}
+                    tag="div"
+                  >
+                    <_Builtin.Block
+                      className={_utils.cx(_styles, "plan-detail-header")}
+                      tag="div"
+                    >
+                      <_Builtin.Block
+                        className={_utils.cx(_styles, "text-xxl-skeleton")}
+                        tag="div"
+                      >
+                        {"Advanced"}
+                      </_Builtin.Block>
+                      <_Builtin.Block tag="div">
+                        <_Builtin.Block
+                          className={_utils.cx(_styles, "text-xxxl-skeleton")}
+                          tag="div"
+                        >
+                          {"$75"}
+                        </_Builtin.Block>
+                      </_Builtin.Block>
+                    </_Builtin.Block>
+                    <_Builtin.Block
+                      className={_utils.cx(
+                        _styles,
+                        "plan-details-list-items-wrap"
+                      )}
+                      tag="div"
+                    >
+                      <_Builtin.Block
+                        className={_utils.cx(
+                          _styles,
+                          "plan-detail-list-item",
+                          "skeleton"
+                        )}
+                        tag="div"
+                      >
+                        <_Builtin.Block
+                          className={_utils.cx(
+                            _styles,
+                            "list-item-icon",
+                            "skeleton"
+                          )}
+                          tag="div"
+                        >
+                          <_Builtin.HtmlEmbed
+                            className={_utils.cx(_styles, "link-embed-icon")}
+                            value="%3Csvg%20width%3D%2212%22%20height%3D%2210%22%20viewBox%3D%220%200%2012%2010%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20d%3D%22M11.6211%202.01127L6.16976%209.40906C6.03975%209.58155%205.84589%209.69458%205.63173%209.72273C5.41757%209.75089%205.20108%209.69181%205.03091%209.55879L1.13809%206.44644C0.79457%206.17154%200.738946%205.67021%201.01385%205.3267C1.28875%204.98318%201.79007%204.92756%202.13359%205.20246L5.37973%207.79953L10.3389%201.06913C10.5016%200.8251%2010.7851%200.690183%2011.0771%200.717942C11.369%200.7457%2011.622%200.931643%2011.7358%201.20194C11.8495%201.47225%2011.8054%201.78317%2011.6211%202.01127Z%22%20fill%3D%22currentcolor%22%2F%3E%0A%3C%2Fsvg%3E"
+                          />
+                        </_Builtin.Block>
+                        <_Builtin.Block
+                          className={_utils.cx(_styles, "text-md-skeleton")}
+                          tag="div"
+                        >
+                          {"Job Search Strategy S8te"}
+                        </_Builtin.Block>
+                      </_Builtin.Block>
+                      <_Builtin.Block
+                        className={_utils.cx(
+                          _styles,
+                          "plan-detail-list-item",
+                          "skeleton"
+                        )}
+                        tag="div"
+                      >
+                        <_Builtin.Block
+                          className={_utils.cx(
+                            _styles,
+                            "list-item-icon",
+                            "skeleton"
+                          )}
+                          tag="div"
+                        >
+                          <_Builtin.HtmlEmbed
+                            className={_utils.cx(_styles, "link-embed-icon")}
+                            value="%3Csvg%20width%3D%2212%22%20height%3D%2210%22%20viewBox%3D%220%200%2012%2010%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20d%3D%22M11.6211%202.01127L6.16976%209.40906C6.03975%209.58155%205.84589%209.69458%205.63173%209.72273C5.41757%209.75089%205.20108%209.69181%205.03091%209.55879L1.13809%206.44644C0.79457%206.17154%200.738946%205.67021%201.01385%205.3267C1.28875%204.98318%201.79007%204.92756%202.13359%205.20246L5.37973%207.79953L10.3389%201.06913C10.5016%200.8251%2010.7851%200.690183%2011.0771%200.717942C11.369%200.7457%2011.622%200.931643%2011.7358%201.20194C11.8495%201.47225%2011.8054%201.78317%2011.6211%202.01127Z%22%20fill%3D%22currentcolor%22%2F%3E%0A%3C%2Fsvg%3E"
+                          />
+                        </_Builtin.Block>
+                        <_Builtin.Block
+                          className={_utils.cx(_styles, "text-md-skeleton")}
+                          tag="div"
+                        >
+                          {"Job Search Strategy Shfe"}
+                        </_Builtin.Block>
+                      </_Builtin.Block>
+                      <_Builtin.Block
+                        className={_utils.cx(
+                          _styles,
+                          "plan-detail-list-item",
+                          "skeleton"
+                        )}
+                        tag="div"
+                      >
+                        <_Builtin.Block
+                          className={_utils.cx(
+                            _styles,
+                            "list-item-icon",
+                            "skeleton"
+                          )}
+                          tag="div"
+                        >
+                          <_Builtin.HtmlEmbed
+                            className={_utils.cx(_styles, "link-embed-icon")}
+                            value="%3Csvg%20width%3D%2212%22%20height%3D%2210%22%20viewBox%3D%220%200%2012%2010%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20d%3D%22M11.6211%202.01127L6.16976%209.40906C6.03975%209.58155%205.84589%209.69458%205.63173%209.72273C5.41757%209.75089%205.20108%209.69181%205.03091%209.55879L1.13809%206.44644C0.79457%206.17154%200.738946%205.67021%201.01385%205.3267C1.28875%204.98318%201.79007%204.92756%202.13359%205.20246L5.37973%207.79953L10.3389%201.06913C10.5016%200.8251%2010.7851%200.690183%2011.0771%200.717942C11.369%200.7457%2011.622%200.931643%2011.7358%201.20194C11.8495%201.47225%2011.8054%201.78317%2011.6211%202.01127Z%22%20fill%3D%22currentcolor%22%2F%3E%0A%3C%2Fsvg%3E"
+                          />
+                        </_Builtin.Block>
+                        <_Builtin.Block
+                          className={_utils.cx(_styles, "text-md-skeleton")}
+                          tag="div"
+                        >
+                          {"Job Search Strategy Sne"}
+                        </_Builtin.Block>
+                      </_Builtin.Block>
+                      <_Builtin.Block
+                        className={_utils.cx(
+                          _styles,
+                          "plan-detail-list-item",
+                          "skeleton"
+                        )}
+                        tag="div"
+                      >
+                        <_Builtin.Block
+                          className={_utils.cx(
+                            _styles,
+                            "list-item-icon",
+                            "skeleton"
+                          )}
+                          tag="div"
+                        >
+                          <_Builtin.HtmlEmbed
+                            className={_utils.cx(_styles, "link-embed-icon")}
+                            value="%3Csvg%20width%3D%2212%22%20height%3D%2210%22%20viewBox%3D%220%200%2012%2010%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20d%3D%22M11.6211%202.01127L6.16976%209.40906C6.03975%209.58155%205.84589%209.69458%205.63173%209.72273C5.41757%209.75089%205.20108%209.69181%205.03091%209.55879L1.13809%206.44644C0.79457%206.17154%200.738946%205.67021%201.01385%205.3267C1.28875%204.98318%201.79007%204.92756%202.13359%205.20246L5.37973%207.79953L10.3389%201.06913C10.5016%200.8251%2010.7851%200.690183%2011.0771%200.717942C11.369%200.7457%2011.622%200.931643%2011.7358%201.20194C11.8495%201.47225%2011.8054%201.78317%2011.6211%202.01127Z%22%20fill%3D%22currentcolor%22%2F%3E%0A%3C%2Fsvg%3E"
+                          />
+                        </_Builtin.Block>
+                        <_Builtin.Block
+                          className={_utils.cx(_styles, "text-md-skeleton")}
+                          tag="div"
+                        >
+                          {"Job Search Strategy Seg"}
+                        </_Builtin.Block>
+                      </_Builtin.Block>
+                      <_Builtin.Block
+                        className={_utils.cx(
+                          _styles,
+                          "plan-detail-list-item",
+                          "skeleton"
+                        )}
+                        tag="div"
+                      >
+                        <_Builtin.Block
+                          className={_utils.cx(
+                            _styles,
+                            "list-item-icon",
+                            "skeleton"
+                          )}
+                          tag="div"
+                        >
+                          <_Builtin.HtmlEmbed
+                            className={_utils.cx(_styles, "link-embed-icon")}
+                            value="%3Csvg%20width%3D%2212%22%20height%3D%2210%22%20viewBox%3D%220%200%2012%2010%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20d%3D%22M11.6211%202.01127L6.16976%209.40906C6.03975%209.58155%205.84589%209.69458%205.63173%209.72273C5.41757%209.75089%205.20108%209.69181%205.03091%209.55879L1.13809%206.44644C0.79457%206.17154%200.738946%205.67021%201.01385%205.3267C1.28875%204.98318%201.79007%204.92756%202.13359%205.20246L5.37973%207.79953L10.3389%201.06913C10.5016%200.8251%2010.7851%200.690183%2011.0771%200.717942C11.369%200.7457%2011.622%200.931643%2011.7358%201.20194C11.8495%201.47225%2011.8054%201.78317%2011.6211%202.01127Z%22%20fill%3D%22currentcolor%22%2F%3E%0A%3C%2Fsvg%3E"
+                          />
+                        </_Builtin.Block>
+                        <_Builtin.Block
+                          className={_utils.cx(_styles, "text-md-skeleton")}
+                          tag="div"
+                        >
+                          {"Job Search Strategy Sejn"}
+                        </_Builtin.Block>
+                      </_Builtin.Block>
+                      <_Builtin.Block
+                        className={_utils.cx(
+                          _styles,
+                          "plan-detail-list-item",
+                          "skeleton"
+                        )}
+                        tag="div"
+                      >
+                        <_Builtin.Block
+                          className={_utils.cx(
+                            _styles,
+                            "list-item-icon",
+                            "skeleton"
+                          )}
+                          tag="div"
+                        >
+                          <_Builtin.HtmlEmbed
+                            className={_utils.cx(_styles, "link-embed-icon")}
+                            value="%3Csvg%20width%3D%2212%22%20height%3D%2210%22%20viewBox%3D%220%200%2012%2010%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20d%3D%22M11.6211%202.01127L6.16976%209.40906C6.03975%209.58155%205.84589%209.69458%205.63173%209.72273C5.41757%209.75089%205.20108%209.69181%205.03091%209.55879L1.13809%206.44644C0.79457%206.17154%200.738946%205.67021%201.01385%205.3267C1.28875%204.98318%201.79007%204.92756%202.13359%205.20246L5.37973%207.79953L10.3389%201.06913C10.5016%200.8251%2010.7851%200.690183%2011.0771%200.717942C11.369%200.7457%2011.622%200.931643%2011.7358%201.20194C11.8495%201.47225%2011.8054%201.78317%2011.6211%202.01127Z%22%20fill%3D%22currentcolor%22%2F%3E%0A%3C%2Fsvg%3E"
+                          />
+                        </_Builtin.Block>
+                        <_Builtin.Block
+                          className={_utils.cx(_styles, "text-md-skeleton")}
+                          tag="div"
+                        >
+                          {"Job Search Strategy Sen"}
+                        </_Builtin.Block>
+                      </_Builtin.Block>
+                      <_Builtin.Block
+                        className={_utils.cx(
+                          _styles,
+                          "plan-detail-list-item",
+                          "skeleton"
+                        )}
+                        tag="div"
+                      >
+                        <_Builtin.Block
+                          className={_utils.cx(
+                            _styles,
+                            "list-item-icon",
+                            "skeleton"
+                          )}
+                          tag="div"
+                        >
+                          <_Builtin.HtmlEmbed
+                            className={_utils.cx(_styles, "link-embed-icon")}
+                            value="%3Csvg%20width%3D%2212%22%20height%3D%2210%22%20viewBox%3D%220%200%2012%2010%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20d%3D%22M11.6211%202.01127L6.16976%209.40906C6.03975%209.58155%205.84589%209.69458%205.63173%209.72273C5.41757%209.75089%205.20108%209.69181%205.03091%209.55879L1.13809%206.44644C0.79457%206.17154%200.738946%205.67021%201.01385%205.3267C1.28875%204.98318%201.79007%204.92756%202.13359%205.20246L5.37973%207.79953L10.3389%201.06913C10.5016%200.8251%2010.7851%200.690183%2011.0771%200.717942C11.369%200.7457%2011.622%200.931643%2011.7358%201.20194C11.8495%201.47225%2011.8054%201.78317%2011.6211%202.01127Z%22%20fill%3D%22currentcolor%22%2F%3E%0A%3C%2Fsvg%3E"
+                          />
+                        </_Builtin.Block>
+                        <_Builtin.Block
+                          className={_utils.cx(_styles, "text-md-skeleton")}
+                          tag="div"
+                        >
+                          {"Job Search Strategym Se"}
+                        </_Builtin.Block>
+                      </_Builtin.Block>
+                      <_Builtin.Block
+                        className={_utils.cx(
+                          _styles,
+                          "plan-detail-list-item",
+                          "skeleton"
+                        )}
+                        tag="div"
+                      >
+                        <_Builtin.Block
+                          className={_utils.cx(
+                            _styles,
+                            "list-item-icon",
+                            "skeleton"
+                          )}
+                          tag="div"
+                        >
+                          <_Builtin.HtmlEmbed
+                            className={_utils.cx(_styles, "link-embed-icon")}
+                            value="%3Csvg%20width%3D%2212%22%20height%3D%2210%22%20viewBox%3D%220%200%2012%2010%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20d%3D%22M11.6211%202.01127L6.16976%209.40906C6.03975%209.58155%205.84589%209.69458%205.63173%209.72273C5.41757%209.75089%205.20108%209.69181%205.03091%209.55879L1.13809%206.44644C0.79457%206.17154%200.738946%205.67021%201.01385%205.3267C1.28875%204.98318%201.79007%204.92756%202.13359%205.20246L5.37973%207.79953L10.3389%201.06913C10.5016%200.8251%2010.7851%200.690183%2011.0771%200.717942C11.369%200.7457%2011.622%200.931643%2011.7358%201.20194C11.8495%201.47225%2011.8054%201.78317%2011.6211%202.01127Z%22%20fill%3D%22currentcolor%22%2F%3E%0A%3C%2Fsvg%3E"
+                          />
+                        </_Builtin.Block>
+                        <_Builtin.Block
+                          className={_utils.cx(_styles, "text-md-skeleton")}
+                          tag="div"
+                        >
+                          {"Job Search Strategyf ghj"}
+                        </_Builtin.Block>
+                      </_Builtin.Block>
+                    </_Builtin.Block>
+                  </_Builtin.Block>
+                </_Builtin.Block>
+              ) : null}
+            </_Builtin.Block>
           </_Builtin.Block>
         </_Builtin.TabsPane>
       </_Builtin.TabsContent>
