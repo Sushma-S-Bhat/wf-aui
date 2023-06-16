@@ -16,7 +16,7 @@ export default function CandidateListing() {
             textDeclined={i.textDeclined}
             //imageProfile={""}
             textRole={i.textRole}
-            onClickCandidateCard={{onClick:()=>{window.location='/candidates/candidate'}}}
+            //onClickCandidateCard={{onClick:()=>{window.location='/candidates/candidate'}}}
           />
         ))}
       />
