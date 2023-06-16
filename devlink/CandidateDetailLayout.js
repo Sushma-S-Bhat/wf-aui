@@ -10,15 +10,30 @@ export function CandidateDetailLayout({
 }) {
   return (
     <_Component
-      className={_utils.cx(_styles, "candidate-detail-layout")}
+      className={_utils.cx(_styles, "candidate-detail-page")}
       tag="div"
     >
       <_Builtin.Block
-        className={_utils.cx(_styles, "candidate-detail-page")}
+        className={_utils.cx(_styles, "candidate-detail-header-block")}
         tag="div"
       >
-        <_Builtin.Block tag="div">{slotCandidateDetailHeader}</_Builtin.Block>
-        <_Builtin.Block tag="div">{slotCandidateDetailTabs}</_Builtin.Block>
+        <_Builtin.Block
+          className={_utils.cx(_styles, "candidate-detail-container")}
+          tag="div"
+        >
+          {slotCandidateDetailHeader}
+        </_Builtin.Block>
+      </_Builtin.Block>
+      <_Builtin.Block
+        className={_utils.cx(_styles, "candidate-detail-bottom-block")}
+        tag="div"
+      >
+        <_Builtin.Block
+          className={_utils.cx(_styles, "candidate-detail-container")}
+          tag="div"
+        >
+          {slotCandidateDetailTabs}
+        </_Builtin.Block>
       </_Builtin.Block>
     </_Component>
   );

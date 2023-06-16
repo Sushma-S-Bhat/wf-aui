@@ -1,24 +1,15 @@
 .events-detail-wrapper {
   display: flex;
-  padding: 12px 14px;
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
   grid-row-gap: 14px;
 
-  border: 1px solid var(--borderGrey-ea561a79);
-  border-radius: 8px;
-
-  background-color: var(--bgGrey100-ce47127d);
+  background-color: transparent;
 
   transition: all 200ms ease;
 
   cursor: pointer;
-}
-
-.events-detail-wrapper:hover {
-  border-color: var(--blue200-07311850);
-  background-color: var(--blue100-d2a1a159);
 }
 
 @media screen and (max-width: 479px) {
@@ -75,6 +66,7 @@
 
 .event-image-name-wrap {
   display: flex;
+  align-items: center;
   grid-column-gap: 12px;
 }
 
@@ -94,6 +86,7 @@
 .coach-event-name.skeleton {
   font-family: 'Flow Circular';
   color: var(--skeletonGrey-4e9a134f);
+  font-size: 20px;
 }
 
 .event-date-day-wrap {
@@ -116,11 +109,16 @@
 }
 
 .view-details-button {
-  padding: 8px 10px;
+  display: flex;
+  width: 28px;
+  height: 28px;
+  padding: 6px;
+  justify-content: center;
+  align-items: center;
 
   border-radius: 100px;
 
-  background-color: var(--green200-3c062f81);
+  background-color: var(--skeletonGrey-4e9a134f);
 
   transition: all 200ms ease;
 
@@ -128,10 +126,6 @@
   line-height: 1;
 
   cursor: pointer;
-}
-
-.view-details-button:hover {
-  background-color: var(--bgGrey200-4f66792c);
 }
 
 .view-details-button.skeleton {

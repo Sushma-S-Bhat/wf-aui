@@ -6,6 +6,7 @@ declare function CoachEventItemUpcoming(props: {
   textDate?: React.ReactNode;
   textDay?: React.ReactNode;
   textName?: React.ReactNode;
-  onClickViewDetails?: Types.Devlink.RuntimeProps;
   onClickJoinMeeting?: Types.Devlink.RuntimeProps;
+  slotEventQa?: Types.Devlink.Slot;
+  imageProfilePic?: Types.Asset.Image;
 }): React.JSX.Element;
